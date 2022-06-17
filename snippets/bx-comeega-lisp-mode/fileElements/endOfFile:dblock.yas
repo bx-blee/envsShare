@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: File Elements - EndOfFile Dblock
+# key: fileElements/endOfFile:dblock
+# group: fileElements
+# --
+$0;;;#+BEGIN: b:elisp:file/endOf :outLevel 1
+;;;#+END:

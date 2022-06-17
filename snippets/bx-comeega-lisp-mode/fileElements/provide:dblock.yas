@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - Provide Dblock
+# key: fileElements/provide:dblock
+# group: fileElements
+# --
+;;;#+BEGIN: b:elisp:file/provide :modName nil
+;;;#+END:
+$0

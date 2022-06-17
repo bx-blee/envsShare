@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - Authors
+# key: fileElements/authors:dblock
+# group: fileElements
+# --
+;;;#+BEGIN: b:elisp:file/authors :authors ("./inserts/authors-mb.org")
+;;;#+END:
+$0

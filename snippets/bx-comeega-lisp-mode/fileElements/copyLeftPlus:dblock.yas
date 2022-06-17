@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - copyLeftPlus
+# key: fileElements/copyLeftPlus:dblock
+# group: fileElements
+# --
+;;;#+BEGIN: b:elisp:file/copyLeftPlus :outLevel 1
+;;;#+END:
+$0
