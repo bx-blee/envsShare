@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - workbench
+# key: fileElements/workbench:dblock
+# group: fileElements
+# --
+;;;#+BEGIN: b:elisp:file/workbench :outLevel 1
+;;;#+END:
+$0

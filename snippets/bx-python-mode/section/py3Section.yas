@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: COMEEGA Py3 Section Prompt
+# key: section/py3Section Prompt
+# group: section
+# --
+$0####+BEGIN: bx:icm:py3:section :title "${1:title}"
+####+END:

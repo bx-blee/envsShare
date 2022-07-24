@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: comeegaDefs - defmacro
+# key: comeegaDefs/defmacro:dblock+
+# group: comeegaDefs
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+;;;#+BEGIN:$0  b:elisp:defs/defmacro :defName \"${1:bFuncName}\"
+;;;#+END:
+                        )
+   " #+begin_org
+** DocStr: Actions based on =parameters= and *returnValues*
+and side-effects are documented here
+#+end_org "
+    '(progn
+      ))
+
+(orgCmntBegin "
+** Basic Usage:
+#+BEGIN_SRC emacs-lisp
+($1)
+#+END_SRC
+" orgCmntEnd)

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - Requires Dblock
+# key: fileElements/requires:dblock
+# group: fileElements
+# --
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :title "REQUIRES" :extraInfo "Imports"
+####+END:
+$0

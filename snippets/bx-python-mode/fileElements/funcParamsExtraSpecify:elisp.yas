@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: FileElem: ParamsExtraSpecify dblock+out
+# key: fileElements/paramsExtraSpecify:dblock+out
+# group: fileElements
+# type: command
+# --
+(let (
+     ($fileName (file-name-nondirectory buffer-file-name))
+     )
+ (b:inserts:dblock|moded
+    (s-lex-format
+     "bx:icm:python:func :funcType \"CsFrmWrk\" :funcName \"g_paramsExtraSpecify\" :comment \"FmWrk: ArgsSpec\"  :retType \"Void\" :deco \"\" :argsList \"parser\""))
+  (insert
+    (s-lex-format "\
+    \"\"\"  #+begin_org
+** Module Specific Command Line Parameters. This func is passed to G_main and can not be decorated.
+#+end_org \"\"\"
+
+    G = icm.IcmGlobalContext()
+    icmParams = icm.ICM_ParamDict()
+
+    icmParams.parDictAdd(
+        parName='moduleVersion',
+        parDescription='Module Version',
+        parDataType=None,
+        parDefault=None,
+        parChoices=list(),
+        parScope=icm.ICM_ParamScope.TargetParam,
+        argparseShortOpt=None,
+        argparseLongOpt='--version',
+    )
+
+    bleep.commonParamsSpecify(icmParams)
+
+    icm.argsparseBasedOnIcmParams(parser, icmParams)
+
+    # So that it can be processed later as well.
+    G.icmParamDictSet(icmParams)
+
+    return\n")))

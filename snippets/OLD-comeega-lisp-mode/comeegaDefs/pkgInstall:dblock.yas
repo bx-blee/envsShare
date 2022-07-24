@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: comeegaDefs - pkgInstallDblock
+# key: comeegaDefs/pkgInstallDblock
+# group: comeegaDefs
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+;;;#+BEGIN:$0  b:elisp:pkg/install :outLevel 2 :pkgsType "component" :pkgName \"${1:pkgName}\" :pkgDesc \"${2:pkgDesc}\"
+;;;#+END:

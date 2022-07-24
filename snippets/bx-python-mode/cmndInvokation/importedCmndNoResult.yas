@@ -6,5 +6,5 @@
 # --
 $0if moduleName.cmndName(cmndOutcome=cmndOutcome).cmnd(
      paramName=paramValue,
-     argsList=cmndArgsList,
+     argsList=['arg1Val', 'arg2Val'],
 ).isProblematic(): return(icm.EH_badOutcome(cmndOutcome))

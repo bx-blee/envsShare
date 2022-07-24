@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - importCmndsModules
+# key: fileElements/importCmndsModules:dblock
+# group: fileElements
+# --
+####+BEGIN: b:python:cs:framework|importCmndsModules :cmndsModules ("blee.icmPlayer.bleep")
+####+END:
+$0

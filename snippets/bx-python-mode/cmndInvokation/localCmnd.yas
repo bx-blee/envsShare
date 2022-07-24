@@ -5,9 +5,11 @@
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
 $0outcome = cmndName().cmnd(
-     interactive=False,
-     paramName=paramValue,
-     argsList=cmndArgs,
-)
+    interactive=False,
+    paramName=paramValue,
+    argsList=['arg1Val', 'arg2Val'],
+    asFunc=data,
+).log()
+if outcome.isProblematic(): return(icm.EH_badOutcome(outcome))
 
-results = outcome.results
+process(outcome.results)

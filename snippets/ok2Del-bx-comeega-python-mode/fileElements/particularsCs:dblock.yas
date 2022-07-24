@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - Particulars CS Info
+# key: fileElements/particulars-csInfo:dblock
+# group: fileElements
+# --
+####+BEGIN: b:prog:file/particulars-csInfo :status "inUse"
+####+END:
+$0

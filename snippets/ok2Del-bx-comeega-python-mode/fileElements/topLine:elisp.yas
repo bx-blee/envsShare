@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: File Elements - Top Line
+# key: fileElements/topLine
+# group: fileElements
+# type: command
+# --
+(let (
+     ($fileName (file-name-nondirectory buffer-file-name))
+     )
+  (insert
+    (s-lex-format "#!/bin/env python\n# -*- coding: utf-8 -*-\n")
+   )
+  )

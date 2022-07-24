@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - Basic Examples Cmnd
+# key: fileElements/basicExamplesCmnd:dblock
+# group: fileElements
+# --
+####+BEGIN: icm:py3:cmnd:classHead :cmndName "examples" :cmndType ""  :comment "FrameWrk: ICM Examples" :parsMand "" :parsOpt "" :argsMin "0" :argsMax "0" :asFunc "" :interactiveP ""
+####+END:
+$0

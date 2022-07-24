@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: File Elements - File Summary
+# key: fileElements/fileSummary
+# group: fileElements
+# type: command
+# --
+(let (
+     ($here "/bisos/blee/env/snippets/bx-comeega-lisp-mode/.inserts")
+     )
+   ;;   /bisos/blee/env/snippets/bx-comeega-lisp-mode/.inserts/fileSummary.el
+  (b:insert-file-contents|forward (expand-file-name "fileSummary.el" $here))
+  )

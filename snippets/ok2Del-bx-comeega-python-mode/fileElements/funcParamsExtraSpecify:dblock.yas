@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: File Elements - ParamsExtraSpecify
+# key: fileElements/paramsExtraSpecify:dblock
+# group: fileElements
+# --
+
+####+BEGIN: bx:icm:python:func :funcType "CsFrmWrk" :funcName "g_paramsExtraSpecify" :comment "FmWrk: ArgsSpec"  :retType "Void" :deco "" :argsList "parser"
+####+END:
+$0

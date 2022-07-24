@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: comeegaDefs - defun
+# key: comeegaDefs/cl-defun:dblock+
+# group: comeegaDefs
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+;;;#+BEGIN:$0  b:elisp:defs/defun :defName \"${1:bFuncName}\" :advice ()
+;;;#+END:
+                        )
+   " #+begin_org
+** DocStr: Actions based on =parameters= and *returnValues*
+and side-effects are documented here
+#+end_org "
+   (let* (
+          (somePar "somePar")
+         )
+        somePar))
+
+(orgCmntBegin "
+** Basic Usage:
+#+BEGIN_SRC emacs-lisp
+($1)
+#+END_SRC
+" orgCmntEnd)

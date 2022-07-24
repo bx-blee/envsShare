@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - Framework Main
+# key: fileElements/frmWrkMain:dblock
+# group: fileElements
+# --
+####+BEGIN: b:python:cs:framework|main :csInfo "icmInfo" :noCmndEntry "examples" :extraParamsHook "g_paramsExtraSpecify" :importedCmndsModules "g_importedCmndsModules"
+####+END:
+$0

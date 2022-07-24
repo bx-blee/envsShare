@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Function py3 Externally Typed
+# key: func/py3ExternallyTyped
+# group: func
+# --
+$0####+BEGIN: bx:icm:py3:func :funcName "${1:funcName}" :funcType "extTyped" :retType "extTyped" :deco "icm.subjectToTracking(fnLoc=True, fnEntry=True, fnExit=True)" :argsList ""
+####+END:
+        arg1,
+):
+    """ #+begin_org
+** [[elisp:(org-cycle)][| *DocStr | ]
+    #+end_org """

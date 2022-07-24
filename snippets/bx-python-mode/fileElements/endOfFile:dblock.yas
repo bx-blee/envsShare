@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: File Elements - EndOfFile Dblock
+# key: fileElements/endOfFile:dblock
+# group: fileElements
+# --
+$0####+BEGIN: b:prog:file/endOfFile :extraParams nil
+####+END:

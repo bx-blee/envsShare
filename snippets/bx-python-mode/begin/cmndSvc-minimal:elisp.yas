@@ -1,0 +1,76 @@
+# -*- mode: snippet -*-
+# name: Minimal Command Service
+# key: begin/cmndSvcMinimal
+# group: begin
+# type: command
+# --
+(let (
+      ($fileElements "/bisos/blee/env/snippets/bx-python-mode/fileElements")
+     )
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/topLineCmndSvc:elisp.yas
+  (b:yas-expand-snippet|file (expand-file-name "topLineCmndSvc:elisp.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/fileSummary:inserts.yas
+  (b:yas-expand-snippet|file (expand-file-name "fileSummary:inserts.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/proclamations:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "proclamations:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/particulars:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "particulars:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/particularsCs:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "particularsCs:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/fileDescription:inserts.yas
+  (b:yas-expand-snippet|file (expand-file-name "fileDescription:inserts.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/orgTopControls:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "orgTopControls:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/workbench:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "workbench:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/pyImports:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "pyImports:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/unisosIcmImports:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "unisosIcmImports:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/importCmndsModules:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "importCmndsModules:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/funcCommonParamsSpecify:dblock.yas
+  ;; (b:yas-expand-snippet|file (expand-file-name "funcCommonParamsSpecify:dblock.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/funcParamsExtraSpecify:elisp.yas
+  (b:yas-expand-snippet|file (expand-file-name "funcParamsExtraSpecify:elisp.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/cmndHeadExamples:elisp.yas
+  (b:yas-expand-snippet|file (expand-file-name "cmndHeadExamples:elisp.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/frmWrkMain:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "frmWrkMain:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/endOfFile:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "endOfFile:dblock.yas" $fileElements))
+
+  (org-dblock-update-buffer-bx)
+  ;; (blee:ppmm:org-mode-content-list)
+  )

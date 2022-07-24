@@ -4,7 +4,7 @@
 # group: cmndInvokation
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-$0if not (result := cmndName(cmndOutcome=cmndOutcome).cmnd(
+$0if not (results := cmndName(cmndOutcome=cmndOutcome).cmnd(
      paramName=paramValue,
-     argsList=cmndArgsList,
+     argsList=['arg1Val', 'arg2Val'],
 ).results): return(icm.EH_badOutcome(cmndOutcome))

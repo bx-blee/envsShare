@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: Cmnd Elems: Basic Examples Cmnd dblock+out
+# key: icmExampleElem/basicExamplesCmnd:dblock+out
+# group: icmExampleElem
+# type: command
+# --
+(let (
+     ($fileName (file-name-nondirectory buffer-file-name))
+     )
+ (b:inserts:dblock|moded
+    (s-lex-format
+     "icm:py3:cmnd:classHead :cmndName \"examples\" :cmndType \"\"  :comment \"FrameWrk: ICM Examples\" :parsMand \"\" :parsOpt \"\" :argsMin \"0\" :argsMax \"0\" :asFunc \"\" :interactiveP \"\""))
+  (insert
+    (s-lex-format "\
+        self.cmndDocStr(f\"\"\" #+begin_org \
+***** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Conventional top level example.
+        #+end_org \"\"\")
+
+        cmndOutcome = self.getOpOutcome()
+
+        logControler = icm.LOG_Control()
+        logControler.loggerSetLevel(20)
+
+        icm.icmExampleMyName(G.icmMyName(), G.icmMyFullName())
+
+        icm.G_commonBriefExamples()
+
+        bleep.examples_icmBasic()
+
+        return(cmndOutcome)\n")))

@@ -3,6 +3,6 @@
 # key: fileElements/orgTopControls:dblock
 # group: fileElements
 # --
-;;;#+BEGIN: b:elisp:file/orgTopControls :outLevel 1
+;;;#+BEGIN: b:prog:file/orgTopControls :outLevel 1
 ;;;#+END:
 $0

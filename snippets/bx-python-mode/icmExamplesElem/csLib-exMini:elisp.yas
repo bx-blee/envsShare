@@ -1,0 +1,51 @@
+# -*- mode: snippet -*-
+# name: Func: CS-Lib Examples For CS-Module
+# key: icmExampleElem/basicExamplesCmnd:dblock+out
+# group: icmExampleElem
+# type: command
+# --
+(let (
+     ($fileName (file-name-nondirectory buffer-file-name))
+     )
+ (b:inserts:dblock|moded
+    (s-lex-format
+     "bx:icm:py3:func :funcName \"examples_modName\" :funcType \"eType\" :retType \"\" :deco \"default\" :argsList \"\""))
+
+    (insert
+        (s-lex-format "\
+        bpoId: typing.Optional[str],
+        envRelPath: typing.Optional[str],
+        sectionTitle: typing.AnyStr = '',
+) -> None:
+"))
+
+    (insert
+        (s-lex-format "\
+    \"\"\" #+begin_org
+** [[elisp:(org-cycle)][| *DocStr | ] Examples of Service Access Instance Commands.
+    #+end_org \"\"\"
+
+    def cpsInit(): return collections.OrderedDict()
+    def menuItem(verbosity): icm.ex_gCmndMenuItem(cmndName, cps, cmndArgs, verbosity=verbosity) # 'little' or 'none'
+
+    if sectionTitle == 'default':
+        icm.cmndExampleMenuChapter('*inMail --- Service Access Instance Commands*')
+
+    if bpoId == None:
+        return
+
+    if envRelPath == None:
+        cmndName = 'bpoRunBasesUpdate'
+        cmndArgs = ''
+        cps = cpsInit() ; cps['bpoId'] = bpoId
+        menuItem(verbosity='none')
+        # menuItem(verbosity='full')
+    else:
+        cmndName = 'someCmnd'
+        cmndArgs = ''
+        cps = cpsInit() ; cps['bpoId'] = bpoId
+        cps['envRelPath'] = envRelPath
+        menuItem(verbosity='none')
+        # menuItem(verbosity='full')"
+
+        )))

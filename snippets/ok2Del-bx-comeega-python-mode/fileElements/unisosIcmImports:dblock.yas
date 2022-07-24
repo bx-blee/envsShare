@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - importUcfIcmBleepG
+# key: fileElements/importUcfIcmBleepG:dblock
+# group: fileElements
+# --
+####+BEGIN: bx:dblock:global:file-insert-cond :cond "./blee.el" :file "/bisos/apps/defaults/update/sw/icm/py/importUcfIcmBleepG.py"
+####+END:
+$0

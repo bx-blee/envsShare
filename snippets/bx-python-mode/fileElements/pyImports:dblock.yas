@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - csItem-pyImports
+# key: fileElements/csItem-pyImports:dblock
+# group: fileElements
+# --
+####+BEGIN: bx:icm:python:icmItem :itemType "=PyImports= " :itemTitle "*Py Library IMPORTS*"
+####+END:
+$0

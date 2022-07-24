@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: File Elements - pkgInstallDblock
+# key: fileElements/pkgInstallDblock
+# group: fileElements
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+;;;#+BEGIN:  b:elisp:pkg/install :outLevel 2 :pkgsType "component" :pkgName "pkgName" :pkgDesc "pkgDesc"
+;;;#+END:
+$0

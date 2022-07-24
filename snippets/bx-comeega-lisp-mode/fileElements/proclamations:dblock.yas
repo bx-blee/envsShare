@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - proclamations
+# key: fileElements/proclamations:dblock
+# group: fileElements
+# --
+;;;#+BEGIN: b:prog:file/proclamations :outLevel 1
+;;;#+END:
+$0
