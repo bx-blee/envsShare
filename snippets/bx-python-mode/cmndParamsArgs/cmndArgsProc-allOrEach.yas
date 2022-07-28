@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: cmndArgsProc Block -- AllOrEach
-# key: cmndElemsArgs/proc-allOrEach
-# group: cmndElemArgs
+# key: cmndParamsArgs/proc-allOrEach
+# group: cmndParamsArgs
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
 ${1:argName} = self.cmndArgsGet(${2:argPosStr}, cmndArgsSpecDict, effectiveArgsList)

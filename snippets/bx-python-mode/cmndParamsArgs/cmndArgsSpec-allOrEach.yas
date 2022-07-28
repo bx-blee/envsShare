@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: cmndArgsSpec Method -- AllOrEach -- 
-# key: cmndElemArgs/specAllOrEach
-# group: cmndElemArgs
+# key: cmndParamsArgs/specAllOrEach
+# group: cmndParamsArgs
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
 $0####+BEGIN: bx:icm:python:method :methodName "cmndArgsSpec" :methodType "anyOrNone" :retType "cmndArgsSpecDict" :deco "default" :argsList ""

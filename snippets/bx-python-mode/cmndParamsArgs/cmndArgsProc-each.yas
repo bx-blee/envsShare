@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: cmndArgsProc Block -- Each
-# key: cmndElemsArgs/proc-each
-# group: cmndElemArgs
+# key: cmndParamsArgs/proc-each
+# group: cmndParamsArgs
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
 $0cmndArgs = self.cmndArgsGet("0&9999", cmndArgsSpecDict, effectiveArgsList)
