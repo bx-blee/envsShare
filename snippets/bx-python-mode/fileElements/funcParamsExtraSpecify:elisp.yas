@@ -19,17 +19,6 @@
     G = icm.IcmGlobalContext()
     icmParams = icm.ICM_ParamDict()
 
-    icmParams.parDictAdd(
-        parName='moduleVersion',
-        parDescription='Module Version',
-        parDataType=None,
-        parDefault=None,
-        parChoices=list(),
-        parScope=icm.ICM_ParamScope.TargetParam,
-        argparseShortOpt=None,
-        argparseLongOpt='--version',
-    )
-
     bleep.commonParamsSpecify(icmParams)
 
     icm.argsparseBasedOnIcmParams(parser, icmParams)

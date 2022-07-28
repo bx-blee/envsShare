@@ -6,6 +6,8 @@
 # --
 (let (
       ($fileElements "/bisos/blee/env/snippets/bx-python-mode/fileElements")
+      ($icmExampleElem "/bisos/blee/env/snippets/bx-python-mode/icmExamplesElem")
+      ($cmnd "/bisos/blee/env/snippets/bx-python-mode/cmnd")
      )
 
   ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/topLineCmndLib:elisp.yas
@@ -48,8 +50,30 @@
   (b:yas-expand-snippet|file (expand-file-name "unisosIcmImports:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
-  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/cmndHeadExamples:elisp.yas
-  (b:yas-expand-snippet|file (expand-file-name "cmndHeadExamples:elisp.yas" $fileElements))
+  (insert "import collections")
+  (b:insert:newLines|nuOf 1)
+
+  (b:inserts:dblock|moded
+    (s-lex-format
+     "bx:icm:py3:section :title \"CS-Lib Examples\""))
+
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/icmExamplesElem/csLib-exMini:elisp.yas
+  (b:yas-expand-snippet|file (expand-file-name "csLib-exMini:elisp.yas" $icmExampleElem))
+  (b:insert:newLines|nuOf 1)
+
+  (b:inserts:dblock|majorSection ;; blee:bxPanel:foldingSection
+                             :outLevel 0
+                             :sep nil
+                             :title "CmndSvcs"
+                             :anchor ""
+                             :extraInfo "Command Services Section"
+                             )
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/cmnd/basic:batch.yas
+  (b:yas-expand-snippet|file (expand-file-name "basic:batch.yas" $cmnd))
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/endOfFile:dblock.yas

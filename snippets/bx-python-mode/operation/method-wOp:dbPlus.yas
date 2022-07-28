@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: wOp Method
+# key: operation/method-wOp
+# group: operation
+# --
+$0####+BEGIN: bx:icm:py3:method :methodName "${1:funcName}_wOp" :methodType "wOp" :retType "OpOutcome" :deco "default" :argsList "typed"
+####+END:
+            self,
+            outcome: typing.Optional[bpf.op.Outcome] = None,
+    ) -> bpf.op.Outcome:
+        """ #+begin_org
+*** [[elisp:(org-cycle)][| DocStr| ]]  Look in control dir for file params.
+        #+end_org """
+
+        if not outcome:
+           outcome = bpf.op.Outcome()
+
+        return outcome

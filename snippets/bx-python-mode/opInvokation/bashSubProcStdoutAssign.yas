@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name:  SubProc Bash wOp StdoutAssign
+# key: opInvokation/subProcBashStdoutAssign
+# group: opInvokation
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+if not (resStr := bpf.subProc.WOpW(invedBy=self, log=1).bash(
+   f"""{actionAndArgs}""",
+).stdout):  return(icm.EH_badOutcome(cmndOutcome))

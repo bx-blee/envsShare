@@ -16,7 +16,10 @@
 ***** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Conventional top level example.
         #+end_org \"\"\")
 
-        cmndOutcome = self.getOpOutcome()
+        def cpsInit(): return collections.OrderedDict()
+        def menuItem(verbosity): icm.ex_gCmndMenuItem(cmndName, cps, cmndArgs, verbosity=verbosity,
+                         comment='none', icmWrapper=None, icmName=None) # verbosity: 'little' 'basic' 'none'
+        def execLineEx(cmndStr): icm.ex_gExecMenuItem(execLine=cmndStr)
 
         logControler = icm.LOG_Control()
         logControler.loggerSetLevel(20)
@@ -26,5 +29,13 @@
         icm.G_commonBriefExamples()
 
         bleep.examples_icmBasic()
+
+        icm.cmndExampleMenuChapter('*This Feature Commands*')
+
+        cmndName = 'someCmnd' ; cmndArgs = '' ; cps=cpsInit(); menuItem(verbosity='none')
+
+        icm.cmndExampleMenuChapter('*GPG Commands*')
+
+        execLineEx(f\"\"\"sudo apt -y install gnupg\"\"\")
 
         return(cmndOutcome)\n")))

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Run Bases Examples
+# key: bpos/runBasesExamples
+# group: bpos
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+        #  RunBases Examples
+        bpoRunBases.examples_bpo_runBases(cur_aasMarmee_bpoId, None, sectionTitle="default")
+        cur_marmeeEnvRelPath = f"marmee/{cur_aasMarmee_svcProvider}/{cur_aasMarmee_svcInMail}/{cur_aasMarmee_svcInstance}"
+        bpoRunBases.examples_bpo_runBases(cur_aasMarmee_bpoId, cur_marmeeEnvRelPath)
+        cur_marmeeEnvRelPath = f"marmee/{cur_aasMarmee_svcProvider}/{cur_aasMarmee_svcOutMail}/{cur_aasMarmee_svcInstance}"
+        bpoRunBases.examples_bpo_runBases(cur_aasMarmee_bpoId, cur_marmeeEnvRelPath)

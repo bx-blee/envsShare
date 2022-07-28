@@ -1,7 +1,15 @@
 # -*- mode: snippet -*-
-# name: Basic Class
+# name: Class: Basic
 # key: class/basic
 # group: class
 # --
 $0####+BEGIN: bx:dblock:python:class :className "${1:className}" :superClass "" :comment "" :classType "basic"
 ####+END:
+    """ #+begin_org
+** [[elisp:(org-cycle)][| DocStr| ]]  Class Doc String
+    #+end_org """
+
+    def __init__(
+            self,
+    ):
+        pass

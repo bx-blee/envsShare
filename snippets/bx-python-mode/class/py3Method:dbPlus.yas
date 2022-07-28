@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Method: Basic Py3 eType
+# key: class/methodPy3EType
+# group: class
+# --
+$0####+BEGIN: bx:icm:py3:method :methodName "${1:methodName}" :methodType "eType" :retType "" :deco "default" :argsList ""
+####+END:
+            self,
+    ):
+        """ #+begin_org
+*** [[elisp:(org-cycle)][| DocStr| ]]  docStr comes here.
+        #+end_org """
+        pass

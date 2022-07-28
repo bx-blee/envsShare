@@ -6,6 +6,8 @@
 # --
 (let (
       ($fileElements "/bisos/blee/env/snippets/bx-python-mode/fileElements")
+      ($icmExampleElem "/bisos/blee/env/snippets/bx-python-mode/icmExamplesElem")
+      ($cmnd "/bisos/blee/env/snippets/bx-python-mode/cmnd")
      )
 
   ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/topLineCmndSvc:elisp.yas
@@ -48,6 +50,10 @@
   (b:yas-expand-snippet|file (expand-file-name "unisosIcmImports:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
+  (insert "import collections\n")
+  (insert "from bisos import bpf\n")
+  (b:insert:newLines|nuOf 1)
+
   ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/importCmndsModules:dblock.yas
   (b:yas-expand-snippet|file (expand-file-name "importCmndsModules:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
@@ -56,13 +62,56 @@
   ;; (b:yas-expand-snippet|file (expand-file-name "funcCommonParamsSpecify:dblock.yas" $fileElements))
   ;; (b:insert:newLines|nuOf 1)
 
+  (b:inserts:dblock|majorSection ;; blee:bxPanel:foldingSection
+                             :outLevel 0
+                             :sep nil
+                             :title "CmndSvcs"
+                             :anchor ""
+                             :extraInfo "Command Services Section"
+                             )
+  (b:insert:newLines|nuOf 1)
+
+  (b:inserts:dblock|moded
+    (s-lex-format
+     "bx:icm:py3:section :title \"CS-Params\""))
+
+  (b:insert:newLines|nuOf 1)
+
+
   ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/funcParamsExtraSpecify:elisp.yas
   (b:yas-expand-snippet|file (expand-file-name "funcParamsExtraSpecify:elisp.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  (b:inserts:dblock|moded
+    (s-lex-format
+     "bx:icm:py3:section :title \"CS-Examples\""))
+
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/cmndHeadExamples:elisp.yas
   (b:yas-expand-snippet|file (expand-file-name "cmndHeadExamples:elisp.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
+
+  (b:inserts:dblock|moded
+    (s-lex-format
+     "bx:icm:py3:section :title \"CS-Commands\""))
+
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/cmnd/basic:batch.yas
+  (b:yas-expand-snippet|file (expand-file-name "basic:batch.yas" $cmnd))
+  (b:insert:newLines|nuOf 1)
+
+
+  (b:inserts:dblock|majorSection ;; blee:bxPanel:foldingSection
+                             :outLevel 0
+                             :sep nil
+                             :title "Main"
+                             :anchor ""
+                             :extraInfo "Framework Dblock"
+                             )
+  (b:insert:newLines|nuOf 1)
+
 
   ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/frmWrkMain:dblock.yas
   (b:yas-expand-snippet|file (expand-file-name "frmWrkMain:dblock.yas" $fileElements))
