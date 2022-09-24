@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Currents Params Assign
+# key: currents/paramsAssign
+# group: currents
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+
+def g_opSysExit(opOutcome):
+    print(opOutcome.error)
+    sys.exit()
+
+g_outcome = bpf.op.Outcome()
+
+$0####+BEGIN: b:python:cs:module/cur_paramsAssign  :curParsList ("${1:paramName}" )
+####+END:

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: File Elements - File Summary CS-Lib
+# key: fileElements/fileSummaryCsLib
+# group: fileElements
+# type: command
+# --
+(let (
+     ($here "/bisos/blee/env/snippets/bx-python-mode/.inserts")
+     )
+   ;;   /bisos/blee/env/snippets/bx-python-mode/.inserts/fileSummaryCsLib.el
+  (b:insert-file-contents|forward (expand-file-name "fileSummaryCsLib.el" $here))
+  )

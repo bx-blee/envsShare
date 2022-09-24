@@ -1,0 +1,41 @@
+# -*- mode: snippet -*-
+# name: FileElem: Basic Examples Cmnd dblock+out
+# key: fileElements/basicExamplesCmnd:dblock+out
+# group: fileElements
+# type: command
+# --
+(let (
+     ($fileName (file-name-nondirectory buffer-file-name))
+     )
+ (b:inserts:dblock|moded
+    (s-lex-format
+     "icm:py3:cmnd:classHead :cmndName \"examples\" :cmndType \"\"  :comment \"FrameWrk: ICM Examples\" :parsMand \"\" :parsOpt \"\" :argsMin \"0\" :argsMax \"0\" :asFunc \"\" :interactiveP \"\""))
+  (insert
+    (s-lex-format "\
+        self.cmndDocStr(f\"\"\" #+begin_org \
+***** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Conventional top level example.
+        #+end_org \"\"\")
+
+        def cpsInit(): return collections.OrderedDict()
+        def menuItem(verbosity): icm.ex_gCmndMenuItem(cmndName, cps, cmndArgs, verbosity=verbosity,
+                         comment='none', icmWrapper=None, icmName=None) # verbosity: 'little' 'basic' 'none'
+        def execLineEx(cmndStr): icm.ex_gExecMenuItem(execLine=cmndStr)
+
+        logControler = icm.LOG_Control()
+        logControler.loggerSetLevel(20)
+
+        icm.icmExampleMyName(G.icmMyName(), G.icmMyFullName())
+
+        icm.G_commonBriefExamples()
+
+        bleep.examples_icmBasic()
+
+        icm.cmndExampleMenuChapter('*This Feature Commands*')
+
+        cmndName = 'someCmnd' ; cmndArgs = '' ; cps=cpsInit(); menuItem(verbosity='none')
+
+        icm.cmndExampleMenuChapter('*GPG Commands*')
+
+        execLineEx(f\"\"\"sudo apt -y install gnupg\"\"\")
+
+        return(cmndOutcome)\n")))

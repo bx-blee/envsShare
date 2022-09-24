@@ -1,3 +1,3 @@
 """ #+begin_org
-* *[Summary]* :: A =CmndSvc= for
+* ~[Summary]~ :: A =CmndSvc= for
 #+end_org """

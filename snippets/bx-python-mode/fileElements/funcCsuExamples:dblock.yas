@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: File Elements - Func CSU-Lib Examples DBlock
+# key: fileElements/funcCSU_LibExamples:dblock
+# group: fileElements
+# --
+####+BEGIN: b:py3:cs:orgItem/section :title "CSU-Lib Examples" :comment "-- Providing examples_csu"
+####+END:
+
+####+BEGIN: b:py3:cs:func/typing :funcName "examples_csu" :comment "~CSU Specification~" :funcType "eType" :retType "" :deco "default" :argsList ""
+####+END:
+        sectionTitle: typing.AnyStr = '',
+) -> None:
+    """ #+begin_org
+** [[elisp:(org-cycle)][| *DocStr* |]] Examples of Cmnds provided by this CSU-Lib
+    #+end_org """
+
+    def cpsInit(): return collections.OrderedDict()
+    def menuItem(verbosity): cs.examples.cmndInsert(cmndName, cps, cmndArgs, verbosity=verbosity) # 'little' or 'none'
+
+    if sectionTitle == 'default':
+        cs.examples.menuChapter('*Cmnds, RoCmnds, PyInv, PyRoInv With Params, Args, Stdin Producing Outcome*')
+
+    cmndName = 'someCmnd' ; cmndArgs = '' ;
+    cps=cpsInit() ; menuItem(verbosity='little')
+$0

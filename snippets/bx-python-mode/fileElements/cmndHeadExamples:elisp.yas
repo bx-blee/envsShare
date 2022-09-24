@@ -8,34 +8,35 @@
      ($fileName (file-name-nondirectory buffer-file-name))
      )
  (b:inserts:dblock|moded
-    (s-lex-format
-     "icm:py3:cmnd:classHead :cmndName \"examples\" :cmndType \"\"  :comment \"FrameWrk: ICM Examples\" :parsMand \"\" :parsOpt \"\" :argsMin \"0\" :argsMax \"0\" :asFunc \"\" :interactiveP \"\""))
-  (insert
-    (s-lex-format "\
+     (s-lex-format
+     "b:py3:cs:cmnd/classHead :cmndName \"examples\" :extent \"verify\" :ro \"noCli\" :comment \"FrameWrk: CS-Main-Examples\" :parsMand \"\" :parsOpt \"\" :argsMin \"0\" :argsMax \"0\" :asFunc \"\" :interactiveP \"\""))
+  (insert (s-lex-format "\
         self.cmndDocStr(f\"\"\" #+begin_org \
 ***** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Conventional top level example.
         #+end_org \"\"\")
 
         def cpsInit(): return collections.OrderedDict()
-        def menuItem(verbosity): icm.ex_gCmndMenuItem(cmndName, cps, cmndArgs, verbosity=verbosity,
-                         comment='none', icmWrapper=None, icmName=None) # verbosity: 'little' 'basic' 'none'
-        def execLineEx(cmndStr): icm.ex_gExecMenuItem(execLine=cmndStr)
+        def menuItem(verbosity): cs.examples.cmndInsert(cmndName, cps, cmndArgs, verbosity=verbosity) # 'little' or 'none'
+        def execLineEx(cmndStr): cs.examples.execInsert(execLine=cmndStr)
 
-        logControler = icm.LOG_Control()
-        logControler.loggerSetLevel(20)
+        #logControler = b_io.log.Control()
+        #logControler.loggerSetLevel(20)
 
-        icm.icmExampleMyName(G.icmMyName(), G.icmMyFullName())
+        cs.examples.myName(cs.G.icmMyName(), cs.G.icmMyFullName())
 
-        icm.G_commonBriefExamples()
+        cs.examples.commonBrief()
 
         bleep.examples_icmBasic()
 
-        icm.cmndExampleMenuChapter('*This Feature Commands*')
+        cs.examples.menuChapter('=Misc=  *Facilities*')
 
-        cmndName = 'someCmnd' ; cmndArgs = '' ; cps=cpsInit(); menuItem(verbosity='none')
+        cmndName = 'someCmnd' ; cmndArgs = '' ;
+        cps=cpsInit() ; menuItem(verbosity='little')
 
-        icm.cmndExampleMenuChapter('*GPG Commands*')
+        cs.examples.menuChapter('=ExecLine Example=  *Example Of GPG Commands*')
 
-        execLineEx(f\"\"\"sudo apt -y install gnupg\"\"\")
+        execLineEx(f\"\"\"echo sudo apt -y install gnupg\"\"\")
+
+        b.ignore(ro.__doc__,)  # We are not using these modules, but they are auto imported.
 
         return(cmndOutcome)\n")))

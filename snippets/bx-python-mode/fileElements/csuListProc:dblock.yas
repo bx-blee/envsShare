@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - csuListProc dblock
+# key: fileElements/csuListProc:dblock
+# group: fileElements
+# --
+####+BEGIN: b:py3:cs:framework/csuListProc :pyImports t :csuImports t :csuParams t
+####+END:
+$0

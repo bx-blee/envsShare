@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: wOp function
+# key: operation/func-wOp
+# group: operation
+# --
+$0####+BEGIN: bx:icm:py3:func :funcName "${1:funcName}_wOp" :funcType "wOp" :retType "OpOutcome" :deco "default" :argsList "typed"
+####+END:
+        arg1: typing.AnyStr,
+        outcome: typing.Optional[bpf.op.Outcome] = None,
+) -> bpf.op.Outcome:
+    """ #+begin_org
+** [[elisp:(org-cycle)][| *docStr* | ]
+    #+end_org """
+
+    if not outcome:
+        outcome = bpf.op.Outcome()
+
+    return outcome

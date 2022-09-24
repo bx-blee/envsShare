@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Major Section Full Prompts
+# key: section/majorFullPrompts
+# group: section
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# _ (underscore) and rawTitle are used as a convention to create Chapters
+# --
+$0####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep nil :title "${1:Title}" :anchor "${2:anchor}" :extraInfo "${3:extraInfo}"
+####+END

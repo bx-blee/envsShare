@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: cmndParamsSpec Module Version
+# key: cmndParamsArgs/paramsModuleVersion
+# group: cmndParamsArgs
+# --
+    icmParams.parDictAdd(
+        parName='moduleVersion',
+        parDescription='Module Version',
+        parDataType=None,
+        parDefault=None,
+        parChoices=list(),
+        parScope=icm.ICM_ParamScope.TargetParam,
+        argparseShortOpt=None,
+        argparseLongOpt='--version',
+    )
+$0

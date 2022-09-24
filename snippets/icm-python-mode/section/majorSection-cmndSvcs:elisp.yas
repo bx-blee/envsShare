@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Major Section Command Services
+# key: section/majorSecCmndSvcs
+# group: section
+# type: command
+# --
+(b:inserts:dblock|majorSection ;; blee:bxPanel:foldingSection
+                             :outLevel 0
+                             :sep nil
+                             :title "CmndSvcs"
+                             :anchor ""
+                             :extraInfo "Command Services Section"
+                             )

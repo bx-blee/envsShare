@@ -3,6 +3,21 @@
 # key: fileElements/funcCommonParamsSpecify:dblock
 # group: fileElements
 # --
-####+BEGIN: bx:icm:python:func :funcType "CsFrmWrk" :funcName "commonParamsSpecify" :comment "Params Spec for: " :retType "Void" :deco "" :argsList "icmParams"
+####+BEGIN: b:py3:cs:orgItem/section :title "Common Parameters Specification" :comment "based on cs.param.CmndParamDict -- As expected from CSU-s"
 ####+END:
+
+####+BEGIN: b:py3:cs:func/typing :funcName "commonParamsSpecify" :comment "~CSU Specification~" :funcType "ParSpc" :deco ""
+####+END:
+        csParams: cs.param.CmndParamDict,
+) -> None:
+    csParams.parDictAdd(
+        parName='par1Example',
+        parDescription="Description of par1Example comes here",
+        parDataType=None,
+        #parDefault='ParOne',
+        parDefault=None,
+        parChoices=["any"],
+        argparseShortOpt=None,
+        argparseLongOpt='--par1Example',
+    )
 $0

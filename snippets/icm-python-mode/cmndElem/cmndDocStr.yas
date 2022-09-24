@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: docString -- Cmnd-Method
+# key: cmndElems/cmndDocStr
+# group: cmndElems
+# --
+        self.cmndDocStr(f""" #+begin_org
+** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  $0
+        #+end_org """)

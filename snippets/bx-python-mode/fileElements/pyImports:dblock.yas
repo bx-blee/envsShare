@@ -3,6 +3,6 @@
 # key: fileElements/csItem-pyImports:dblock
 # group: fileElements
 # --
-####+BEGIN: bx:icm:python:icmItem :itemType "=PyImports= " :itemTitle "*Py Library IMPORTS*"
+####+BEGIN: b:py3:cs:orgItem/basic :type "=PyImports= " :title "*Py Library IMPORTS*" :comment "-- with classification based framework/imports"
 ####+END:
 $0

@@ -27,21 +27,38 @@
   (b:yas-expand-snippet|file (expand-file-name "fileSummary:inserts.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
+  ;; ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/copyLeftPlus:dblock.yas
+  ;; (b:yas-expand-snippet|file (expand-file-name "copyLeftPlus:dblock.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
 
-  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/copyLeftPlus:dblock.yas
-  (b:yas-expand-snippet|file (expand-file-name "copyLeftPlus:dblock.yas" $fileElements))
+  ;; ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/authors:dblock.yas
+  ;; (b:yas-expand-snippet|file (expand-file-name "authors:dblock.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
+
+  ;; ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/orgTopControls:dblock.yas
+  ;; (b:yas-expand-snippet|file (expand-file-name "orgTopControls:dblock.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
+
+
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/proclamations:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "proclamations:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
-  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/authors:dblock.yas
-  (b:yas-expand-snippet|file (expand-file-name "authors:dblock.yas" $fileElements))
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/particulars:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "particulars:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/fileDescription:inserts.yas
+  (b:yas-expand-snippet|file (expand-file-name "fileDescription:inserts.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/orgTopControls:dblock.yas
   (b:yas-expand-snippet|file (expand-file-name "orgTopControls:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
-  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/fileDescription:inserts.yas
-  (b:yas-expand-snippet|file (expand-file-name "fileDescription:inserts.yas" $fileElements))
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/workbench:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "workbench:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/requires:dblock.yas
@@ -67,20 +84,20 @@
   (b:yas-expand-snippet|file (expand-file-name "commonFacilities:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
- (b:inserts:dblock|moded
+  (b:inserts:dblock|moded
     (s-lex-format
      "b:elisp:pkg/fullUpdate :outLevel 1 :pkgsStage \"ready\" :pkgAdoptionType \"${$fileType}\" :pkgName \"${$pkgName}\""))
   (b:insert:newLines|nuOf 1)
 
- (b:inserts:dblock|moded
+  (b:inserts:dblock|moded
     (s-lex-format
      "b:elisp:pkg:install/update :outLevel 1 :pkgsStage \"ready\" :pkgAdoptionType \"${$fileType}\" :pkgName \"${$pkgName}\""))
   (b:insert:newLines|nuOf 1)
 
- (b:inserts:dblock|moded
+  (b:inserts:dblock|moded
     (s-lex-format
      "b:elisp:pkg:config/main :outLevel 1 :pkgsStage \"ready\" :pkgAdoptionType \"${$fileType}\" :pkgName \"${$pkgName}\""))
- (insert "   ;;; Configuration Material Comes Here\n  )\n")
+  (insert "   ;;; Configuration Material Comes Here\n  )\n")
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/provide:dblock.yas
@@ -92,7 +109,8 @@
 
   (org-dblock-update-buffer-bx)
   ;; (blee:ppmm:org-mode-content-list)
-  )
+
 
   (beginning-of-buffer)
-  )
+
+)

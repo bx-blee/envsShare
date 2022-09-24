@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: FileElem: csuListSpec
+# key: fileElements/csuListSpec
+# group: fileElements
+# type: command
+# --
+(progn
+  (insert "\"\"\" #+begin_org\n")
+  (insert (s-lex-format "\
+*  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_ _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_ [[elisp:(outline-show-branches+toggle)][|=]] [[elisp:(bx:orgm:indirectBufOther)][|>]] *[[elisp:(blee:ppmm:org-mode-toggle)][|N]]*  CsFrmWrk   [[elisp:(outline-show-subtree+toggle)][||]] ~csuList emacs-list Specifications~  [[elisp:(blee:org:code-block/above-run)][ /Eval Below/ ]] [[elisp:(org-cycle)][| ]]
+#+BEGIN_SRC emacs-lisp
+(setq  b:py:cs:csuList
+  (list
+   \"bisos.b.cs.ro\"
+   \"blee.icmPlayer.bleep\"
+ ))
+#+END_SRC
+#+RESULTS:
+| bisos.b.cs.ro | blee.icmPlayer.bleep |
+"
+                        ))
+  (insert "#+end_org \"\"\"\n")
+  )

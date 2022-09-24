@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: File Elements - Top Line CS-Lib
+# key: fileElements/topLineCsLib
+# group: fileElements
+# type: command
+# --
+(let (
+     ($fileName (file-name-nondirectory buffer-file-name))
+     )
+  (insert
+    (s-lex-format "# -*- coding: utf-8 -*-\n")
+   )
+  )

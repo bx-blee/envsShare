@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: CS-Function py3 Externally Typed
+# key: func/cs-py3ExternallyTyped
+# group: func
+# --
+$0####+BEGIN: bx:cs:py3:func :funcName "${1:funcName}" :funcType "extTyped" :deco "track"
+####+END:
+        arg1: str,
+) -> None:
+    """ #+begin_org
+** [[elisp:(org-cycle)][| *DocStr | ]
+    #+end_org """

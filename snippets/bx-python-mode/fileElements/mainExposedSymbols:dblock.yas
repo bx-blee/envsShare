@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - mainExposedSymbols dblock
+# key: fileElements/mainExposedSymbols:dblock
+# group: fileElements
+# --
+####+BEGIN: b:py3:cs:main/exposedSymbols :classes ()
+####+END:
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - dblockControlsCsMu dblock
+# key: fileElements/dblockControlsCsMu:dblock
+# group: fileElements
+# --
+####+BEGIN: b:py3:cs:file/dblockControls :classification "cs-u"
+####+END:
+$0

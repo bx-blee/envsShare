@@ -1,19 +1,13 @@
 # -*- mode: snippet -*-
 # name: Basic In icm.py (lib) -- No Args -- no .icm
-# key: icmCmnds/simpleLib
-# group: icmCmnds
+# key: csCmnds/simpleLib
+# group: csCmnds
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-$0####+BEGIN: bx:icm:python:cmnd:classHead :modPrefix "lib" :cmndName "${1:commandName}" :comment "" :parsMand "" :parsOpt "" :argsMin "0" :argsMax "0" :asFunc "" :interactiveP ""
+$0####+BEGIN: b:py3:cs:cmnd/classHead :modPrefix "lib" :cmndName "${1:commandName}" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 0 :argsMax 0 :pyInv ""
 ####+END:
 
        return cmndOutcome.set(
-            opError=icm.OpError.Success,
+            opError=cs.OpError.Success,
             opResults=None,
         )
-
-####+BEGIN: bx:icm:python:method :methodName "cmndDocStr" :methodType "anyOrNone" :retType "bool" :deco "default" :argsList ""
-####+END:        
-        return """
-***** TODO [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Place holder for this commands doc string.
-"""

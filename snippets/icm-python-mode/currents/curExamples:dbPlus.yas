@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Currents Example Elements
+# key: currents/examplesElement
+# group: currents
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+        icm.cmndExampleMenuChapter('*Currents Examples Settings*')
+        cur_examples()

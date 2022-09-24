@@ -1,12 +1,16 @@
 # -*- mode: snippet -*-
 # name: Basic With Args Action Plus Rest
-# key: icmCmnds/basicArgsActionRest
-# group: icmCmnds
+# key: csCmnds/basicArgsActionRest
+# group: csCmnds
 # type: snippet
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-$0####+BEGIN: bx:icm:python:cmnd:classHead :cmndName "${1:commandName}" :comment "" :parsMand "" :parsOpt "" :argsMin "1" :argsMax "9999" :asFunc "" :interactiveP ""
+$0####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "${1:commandName}" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 1 :argsMax 9999 :pyInv ""
 ####+END:
+        self.cmndDocStr(f""" #+begin_org
+** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  A starting point command.
+        #+end_org """)
+
         action = self.cmndArgsGet("0", cmndArgsSpecDict, effectiveArgsList)
         print(action)
 
@@ -17,16 +21,16 @@ $0####+BEGIN: bx:icm:python:cmnd:classHead :cmndName "${1:commandName}" :comment
             print(each)
 
         return cmndOutcome.set(
-            opError=icm.OpError.Success,
+            opError=cs.OpError.Success,
             opResults=None,
         )
 
-####+BEGIN: bx:icm:python:method :methodName "cmndArgsSpec" :methodType "anyOrNone" :retType "bool" :deco "default" :argsList ""
+####+BEGIN: b:py3:cs:method/typing :methodName "cmndArgsSpec" :methodType "anyOrNone" :retType "bool" :deco "default" :argsList ""
 ####+END:        
         """
 ***** Cmnd Args Specification
       """
-        cmndArgsSpecDict = icm.CmndArgsSpecDict()
+        cmndArgsSpecDict = cs.CmndArgsSpecDict()
         cmndArgsSpecDict.argsDictAdd(
             argPosition="0",
             argName="action",
@@ -41,11 +45,3 @@ $0####+BEGIN: bx:icm:python:cmnd:classHead :cmndName "${1:commandName}" :comment
         )
 
         return cmndArgsSpecDict
-
-
-####+BEGIN: bx:icm:python:method :methodName "cmndDocStr" :methodType "anyOrNone" :retType "bool" :deco "default" :argsList ""
-####+END:        
-        return """
-***** TODO [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Place holder for this commands doc string.
-"""
-

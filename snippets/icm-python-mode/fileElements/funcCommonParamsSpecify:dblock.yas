@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - FuncCommonParamsSpecify
+# key: fileElements/funcCommonParamsSpecify:dblock
+# group: fileElements
+# --
+####+BEGIN: bx:icm:python:func :funcType "CsFrmWrk" :funcName "commonParamsSpecify" :comment "Params Spec for: " :retType "Void" :deco "" :argsList "icmParams"
+####+END:
+$0

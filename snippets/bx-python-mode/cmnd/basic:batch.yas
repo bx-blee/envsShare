@@ -1,17 +1,17 @@
 # -*- mode: snippet -*-
 # name: Batch Basic Command -- NoArgs
-# key: icmCmnds/batch-simple
-# group: icmCmnds
+# key: csCmnds/batch-simple
+# group: csCmnds
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-####+BEGIN: bx:icm:python:cmnd:classHead :cmndName "someCmnd" :comment "" :parsMand "" :parsOpt "" :argsMin "0" :argsMax "0" :asFunc "" :interactiveP ""
+####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "someCmnd" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 0 :argsMax 0 :pyInv ""
 ####+END:
         self.cmndDocStr(f""" #+begin_org
 ** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  A starting point command.
         #+end_org """)
 
-        if bpf.subProc.WOpW(invedBy=self, log=1).bash(
+        if b.subProc.WOpW(invedBy=self, log=1).bash(
                 f"""echo hello World""",
-        ).isProblematic():  return(icm.EH_badOutcome(cmndOutcome))
+        ).isProblematic():  return(b_io.eh.badOutcome(cmndOutcome))
 
         return(cmndOutcome)

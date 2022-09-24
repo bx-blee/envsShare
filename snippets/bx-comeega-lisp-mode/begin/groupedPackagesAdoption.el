@@ -25,19 +25,35 @@
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/copyLeftPlus:dblock.yas
-  (b:yas-expand-snippet|file (expand-file-name "copyLeftPlus:dblock.yas" $fileElements))
-  (b:insert:newLines|nuOf 1)
+  ;; (b:yas-expand-snippet|file (expand-file-name "copyLeftPlus:dblock.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/authors:dblock.yas
-  (b:yas-expand-snippet|file (expand-file-name "authors:dblock.yas" $fileElements))
+  ;; (b:yas-expand-snippet|file (expand-file-name "authors:dblock.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/orgTopControls:dblock.yas
+  ;; (b:yas-expand-snippet|file (expand-file-name "orgTopControls:dblock.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/proclamations:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "proclamations:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/particulars:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "particulars:dblock.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/fileDescription:inserts.yas
+  (b:yas-expand-snippet|file (expand-file-name "fileDescription:inserts.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/orgTopControls:dblock.yas
   (b:yas-expand-snippet|file (expand-file-name "orgTopControls:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
-  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/fileDescription:inserts.yas
-  (b:yas-expand-snippet|file (expand-file-name "fileDescription:inserts.yas" $fileElements))
+  ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/workbench:dblock.yas
+  (b:yas-expand-snippet|file (expand-file-name "workbench:dblock.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
   ;; /bisos/blee/env/snippets/bx-comeega-lisp-mode/fileElements/requires:dblock.yas
