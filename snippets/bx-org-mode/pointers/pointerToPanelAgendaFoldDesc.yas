@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Pointer To Panel Agenda -- FoldDesc
+# key: pointer/panelFoldDesc
+# group: Pointers
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+$0####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda t :sep t :outLevel 2 :model "auto" :foldDesc "${2:foldingDesc}" :destDesc "auto" :dest "${1:panelPath}"
+####+END
