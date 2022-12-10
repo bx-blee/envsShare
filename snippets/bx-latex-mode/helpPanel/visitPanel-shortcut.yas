@@ -3,6 +3,6 @@
 # key: visitPanel
 # type: command
 # --
-(let (($panelFile "/bisos/panels/bisos-apps/lcnt/lcntSnippets/_nodeBase_/fullUsagePanel-en.org"))
-     (find-file-read-only-other-frame $panelFile)
-)
+(let (($panelFile "/bisos/panels/bisos-apps/lcnt/dblocksAndSnippets/_nodeBase_/fullUsagePanel-en.org"))
+     (b:snippet:help/panel $panelFile)
+ )

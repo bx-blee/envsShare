@@ -3,7 +3,7 @@
 # key: func/cs-py3ExternallyTyped
 # group: func
 # --
-$0####+BEGIN: bx:cs:py3:func :funcName "${1:funcName}" :funcType "extTyped" :deco "track"
+$0####+BEGIN: b:py3:cs:func/typing :funcName "${1:funcName}" :funcType "extTyped" :deco "track"
 ####+END:
         arg1: str,
 ) -> None:

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Section - CS OrgItem Basic
+# key: section/orgItemBasic
+# group: section
+# --
+$0####+BEGIN: b:py3:cs:orgItem/basic :type "=${1:Facilities}= " :title "*${2:Common Facilities}*" :comment "${3:General}"
+####+END:

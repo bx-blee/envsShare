@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Imports - framework imports based on classifications
+# key: fileElements/framework imports:dblock
+# group: imports
+# --
+####+BEGIN: b:py3:cs:framework/imports :basedOn "classification"
+####+END:
+$0

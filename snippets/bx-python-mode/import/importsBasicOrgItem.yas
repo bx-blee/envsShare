@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Imports - OrgItemBasic
+# key: imports/orgItemBasic
+# group: imports
+# --
+####+BEGIN: b:py3:cs:orgItem/basic :type "=PyImports= " :title "*Py Library IMPORTS*" :comment "-- with classification based framework/imports"
+####+END:
+$0
