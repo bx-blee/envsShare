@@ -2,8 +2,9 @@
 # name: Method: Basic Py3 eType
 # key: class/methodPy3EType
 # group: class
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-$0####+BEGIN: bx:icm:py3:method :methodName "${1:methodName}" :methodType "eType" :retType "" :deco "default" :argsList ""
+$0####+BEGIN: b:py3:cs:method/typing :methodName "${1:methodName}" :methodType "eType" :deco "default" :comment "${2:shortComment}"
 ####+END:
             self,
     ):

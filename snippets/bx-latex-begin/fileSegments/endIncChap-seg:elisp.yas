@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: End Included Chapter (elisp)
+# key: fileSegments/endIncChap:elisp
+# group: fileSegments
+# type: command
+# --
+(let (
+      ($fileElements "/bisos/blee/env/snippets/bx-latex-begin/fileElements")
+      ($cmnd "/bisos/blee/env/snippets/bx-latex-mode/sections")
+     )
+
+  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/endOfFile-included:db.yas
+  (b:yas-expand-snippet|file (expand-file-name "endOfFile-included:db.yas" $fileElements))
+
+  (org-dblock-update-buffer-bx)
+  )

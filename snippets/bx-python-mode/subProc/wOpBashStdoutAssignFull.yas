@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name:  SubProc WOp Bash StdoutAssign Full
+# key: subProc/WOpBashStdoutAssignFull
+# group: subProc
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+if not (resStr := b.subProc.WOpW(invedBy=self, log=1, cd=WHERE, uid="root").bash(
+   f"""{actionAndArgs}""",
+   stdin="",
+).stdout):  return(b_io.eh.badOutcome(cmndOutcome))

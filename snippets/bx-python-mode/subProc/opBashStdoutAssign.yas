@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name:  SubProc Op Bash StdoutAssign
+# key: subProc/opBashStdoutAssign
+# group: subProc
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+if not (resStr := b.subProc.Op(outcome=cmndOutcome, log=1).bash(
+   f"""{actionAndArgs}""",
+).stdout):  return(b_io.eh.badOutcome(cmndOutcome))

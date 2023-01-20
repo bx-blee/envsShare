@@ -1,0 +1,43 @@
+# -*- mode: snippet -*-
+# name: Top Included Chapter (elisp)
+# key: fileSegments/topIncChap:elisp
+# group: fileSegments
+# type: command
+# --
+(let (
+      ($fileElements "/bisos/blee/env/snippets/bx-latex-begin/fileElements")
+      ($cmnd "/bisos/blee/env/snippets/bx-latex-mode/sections")
+     )
+
+  ;;  /bisos/blee/env/snippets/bx-latex-begin/fileElements/fileTopLine:elisp.yas
+  (b:yas-expand-snippet|file (expand-file-name "fileTopLine:elisp.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-python-mode/fileElements/fileSummaryCsLib:inserts.yas
+  ;;(b:yas-expand-snippet|file (expand-file-name "fileSummary:inserts.yas" $fileElements))
+  ;; (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/thisFile:db.yas
+  (b:yas-expand-snippet|file (expand-file-name "thisFile:db.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/orgTopControls:db.yas
+  (b:yas-expand-snippet|file (expand-file-name "orgTopControls:db.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/orgLcntProc:db.yas
+  (b:yas-expand-snippet|file (expand-file-name "orgLcntProc:db.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/contentsList:db.yas
+  (b:yas-expand-snippet|file (expand-file-name "contentsList:db.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/docStatus:db.yas
+  (b:yas-expand-snippet|file (expand-file-name "docStatus:db.yas" $fileElements))
+  (b:insert:newLines|nuOf 1)
+
+  (org-dblock-update-buffer-bx)
+  (org-dblock-update-buffer-bx)
+  ;; (blee:ppmm:org-mode-content-list)
+  )

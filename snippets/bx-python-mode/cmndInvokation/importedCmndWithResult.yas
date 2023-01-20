@@ -5,6 +5,8 @@
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
 $0if not (results := moduleName.cmndName(cmndOutcome=cmndOutcome).cmnd(
+     rtInv=cs.RtInvoker.new_py(), cmndOutcome=cmndOutcome,
      paramName=paramValue,
      argsList=['arg1Val', 'arg2Val'],
-).results): return(icm.EH_badOutcome(cmndOutcome))
+     pyArg=data,
+).results): return(b_io.eh.badOutcome(cmndOutcome))

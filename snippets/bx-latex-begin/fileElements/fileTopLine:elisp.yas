@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: File Elements - Top Line LaTeX
+# key: fileElements/topLineLaTeX
+# group: fileElements
+# type: command
+# --
+(let (
+     ($fileName (file-name-nondirectory buffer-file-name))
+     )
+  (insert
+    (s-lex-format "%%% -*- Mode: LaTeX; -*- ${$fileName}\n")
+   )
+  )

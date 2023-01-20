@@ -1,10 +1,11 @@
 # -*- mode: snippet -*-
-# name: cmndArgsProc Block -- Each
+# name: cmndArgsProc  -- Process Each -- 0-to-9999
 # key: cmndParamsArgs/proc-each
 # group: cmndParamsArgs
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-$0cmndArgs = self.cmndArgsGet("0&9999", cmndArgsSpecDict, effectiveArgsList)
+cmndArgsSpecDict = self.cmndArgsSpec()
+cmndsArgs = self.cmndArgsGet("0&9999", cmndArgsSpecDict, argsList)
 
 for each in cmndArgs:
-    process(each)                        
+    process(each)$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Enum Define
+# key: enum/define
+# group: enum
+# --
+$0####+BEGIN: bx:dblock:python:enum :enumName "${1:ClassName}" :comment ""
+####+END:
+    Py = 'Py'

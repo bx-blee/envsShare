@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Frame Derived Video
+# key: frame/derived/Video
+# group: DB-Frame-Derived
+# --
+$0%%%#+BEGIN: b:lcnt:pres:frame/derivedVideo :title "${1:Title}" :subtitle "${2:SubTitle}" :label "${3:auto}" :reveal "plain" :beamer "regular" :comment ""  :transition "${4:default}"
+%%%#+END:
+
+  \pnote{
+    Frame Notes\\\\
+    \par
+  }
+
+\end{frame}
+\end{verblatex}

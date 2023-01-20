@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Front Matter - DB: (b:lcnt:latex/frontmatter)
+# key:  latex/frontmatter:dblock
+# group: masters-art
+# --
+%%%#+BEGIN: b:lcnt:latex/frontmatter  :comment ""
+%%%#+END:
+$0

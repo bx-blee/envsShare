@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: File Elements - EndOfFile DB Included
+# key: fileElements/endOfFile:db:included
+# group: fileElements
+# --
+$0%%%#+BEGIN: b:lcnt:latex/endOfFile :category "lcnt.latex.included.en"  :includePath "./common"  :masters '("../usEditionEnFa/articleEnFa.ttytex" "../intEditionEnFa/articleEnFa.ttytex")
+%%%#+END:

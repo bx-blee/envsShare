@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Front- Table Of Contents - DB: (b:lcnt:latex:front/tocsInsert)
+# key:  latex/tocsInsert:dblock
+# group: masters-art
+# --
+%%%#+BEGIN: b:lcnt:latex:front/tocsInsert :pageBreak nil :shortToc t :toc t :figures t :tables nil
+%%%#+END:
+$0

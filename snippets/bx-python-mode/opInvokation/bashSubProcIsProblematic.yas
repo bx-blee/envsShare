@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name:  SubProc Bash wOp isProblematic
-# key: opInvokation/subProcBashIsProblematic
-# group: opInvokation
-# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
-# --
-if bpf.subProc.WOpW(invedBy=self, log=1).bash(
-        f"""echo hello World""",
-).isProblematic():  return(icm.EH_badOutcome(cmndOutcome))

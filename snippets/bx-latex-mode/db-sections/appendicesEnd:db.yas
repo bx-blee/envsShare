@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: appendicesEnd
+# key: dblock/appendicesEnd
+# group: Parts dblock
+# --
+$0%%%#+BEGIN: b:lcnt:latex/appendicesEnd :whenIncludeOnly nil :comment "ignore end appendices whenIncludeOnly"
+%%%#+END:

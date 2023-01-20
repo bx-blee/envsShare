@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: Basic With Args --  Each
+# key: csCmnds/allOrEach
+# group: csCmnds
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+$0####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "${1:commandName}" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 0 :argsMax 9999 :pyInv ""
+####+END:
+        if self.cmndDocStr(f""" #+begin_org
+** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  A starting point command.
+        #+end_org """): return(cmndOutcome)
+
+        cmndArgs = self.cmndArgsGet("0&9999", cmndArgsSpecDict, argsList)
+        if cmndArgs[0] == "all":
+            b_io.pr(f"processing all")
+        else:
+            for eachArg in cmndArgs:
+                b_io.pr(f"processing {eachArg}")
+
+        return cmndOutcome.set(
+            opError=b.OpError.Success,
+            opResults=None,
+        )
+
+####+BEGIN: b:py3:cs:method/typing :methodName "cmndArgsSpec" :methodType "ArgsSpec" :deco "default"
+####+END:
+            self,
+) -> cs.arg.CmndArgsSpecDict:
+        """ #+begin_org
+*** [[elisp:(org-cycle)][| *cmndArgsSpec:* |]] Command Argument Specifications
+        #+end_org """
+        cmndArgsSpecDict = cs.arg.CmndArgsSpecDict()
+        cmndArgsSpecDict.argsDictAdd(
+            argPosition="0&9999",
+            argName="listToApply",
+            argChoices=[],
+            argDescription="List Of Arguments To Be Applied"
+        )
+        return cmndArgsSpecDict

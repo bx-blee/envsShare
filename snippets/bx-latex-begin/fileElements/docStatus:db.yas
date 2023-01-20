@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: File Elements - DB File Status Plus TODOs
+# key: fileElements/fileStatus:dblock
+# group: fileElements
+# --
+%%%#+BEGIN: b:lcnt:latex/docStatus :comment "Status"
+%%%#+END:
+
+\begin{comment}
+** TODO [[elisp:(org-cycle)][| ]]  Idea      ::  A Starting Point   [[elisp:(org-cycle)][| ]]
+\end{comment}
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Preamble Begin - DB: (b:lcnt:latex:preamble/beginMarker)
+# key:  latex/preambleBegin:dblock
+# group: masters-common
+# --
+%%%#+BEGIN: b:lcnt:latex:preamble/beginMarker  :comment "~~~~~~~~~~~"
+%%%#+END:
+$0

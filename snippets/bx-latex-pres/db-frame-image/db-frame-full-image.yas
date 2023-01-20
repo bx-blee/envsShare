@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Frame Full Image (Section+Frame+Body)
+# key: frame/full/image
+# group: DB-Frame-Image
+# --
+$0%%%#+BEGIN: b:lcnt:image:full/filePath :imageFile "${1:imageFilePath}"  :comment "${2:comment}"
+%%%#+END:

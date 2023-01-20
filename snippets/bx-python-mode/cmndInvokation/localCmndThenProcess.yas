@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Cmnd Invokation -- localCmndThenProcess
+# key: cmndInvokation/localCmndThenProcess
+# group: cmndInvokation
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+$0outcome = cmndName(cmndOutcome=cmndOutcome).cmnd(
+     rtInv=cs.RtInvoker.new_py(), cmndOutcome=cmndOutcome,
+     paramName=paramValue,
+     argsList=['arg1Val', 'arg2Val'],
+     pyArg=data,
+).log()
+if outcome.isProblematic(): return(b_io.eh.badOutcome(cmndOutcome))
+
+process(outcome.results)

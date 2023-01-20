@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Frame Blank And body=videoFullScreen
+# key: frame/head/blank
+# group: DB-Frames
+# --
+$0%%%#+BEGIN: b:lcnt:pres:frame:begin/blank  :label "${1:label}" :comment "body=video"
+%%%#+END:
+
+%%%#+BEGIN: b:lcnt:pres:frame:body:mm/video :videoPath "/video/${2:fileName}.mp4" :comment "${3:comment}"
+%%%#+END:
+
+  \pnote{
+    Frame Notes\\\\
+    \par
+  }
+
+\end{frame}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - DB: lcntProc this file
+# key: fileElements/lcntProc:db
+# group: fileElements
+# --
+%%%#+BEGIN: b:lcnt:latex/lcntProc :comment "Based on file-local-variables"
+%%%#+END:
+$0

@@ -6,9 +6,9 @@
 # --
 ####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "someCmnd" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 0 :argsMax 0 :pyInv ""
 ####+END:
-        self.cmndDocStr(f""" #+begin_org
+        if self.cmndDocStr(f""" #+begin_org
 ** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  A starting point command.
-        #+end_org """)
+        #+end_org """): return(cmndOutcome)
 
         if b.subProc.WOpW(invedBy=self, log=1).bash(
                 f"""echo hello World""",

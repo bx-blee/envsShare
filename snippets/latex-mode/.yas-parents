@@ -1,1 +1,1 @@
-my-latex-mode bx-latex-mode atpoint-gmode region-gmode
+my-latex-mode bx-latex-begin bx-latex-mode bx-latex-pres bx-latex-old atpoint-gmode region-gmode

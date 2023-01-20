@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
-# name: Basic Class Method
-# key: class/method
+# name: Basic Class Method Typing
+# key: class/methodTyping
 # group: class
 # --
-$0####+BEGIN: bx:icm:python:method :methodName "${1:methodName}" :methodType "anyOrNone" :retType "bool" :deco "default" :argsList "${2:methodArgs}"
+$0####+BEGIN: b:py3:cs:method/typing :methodName "${1:methodName}"  :deco "default"
 ####+END:        
         pass

@@ -7,9 +7,9 @@
 # --
 $0####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "${1:commandName}" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 1 :argsMax 9999 :pyInv ""
 ####+END:
-        self.cmndDocStr(f""" #+begin_org
+        if self.cmndDocStr(f""" #+begin_org
 ** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  A starting point command.
-        #+end_org """)
+        #+end_org """): return(cmndOutcome)
 
         action = self.cmndArgsGet("0", cmndArgsSpecDict, effectiveArgsList)
         print(action)

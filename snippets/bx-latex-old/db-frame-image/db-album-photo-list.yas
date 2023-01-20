@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Album Photo List FromFile.camera
+# key: album/photo/list/camera
+# group: DB-Frame-Image
+# --
+$0%%%#+BEGIN: b:lcnt:album:photo:list/fromFile.camera :albumFile "${1:albumFilePath}"  :comment "${2:comment}"
+%%%#+END:

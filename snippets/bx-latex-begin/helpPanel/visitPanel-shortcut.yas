@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Visit Blee Help Panel
+# key: helpPanel
+# type: command
+# --
+(let (($panelFile "/bisos/panels/bisos-apps/lcnt/dblocksAndSnippets/_nodeBase_/fullUsagePanel-en.org"))
+     (b:snippet:help/panel $panelFile)
+ )

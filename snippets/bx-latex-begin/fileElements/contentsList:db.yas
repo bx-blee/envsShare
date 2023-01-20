@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: File Elements - DB: Contents List
+# key: fileElements/contentsList:dblock
+# group: fileElements
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+%%%#+BEGIN: b:lcnt:latex/contentsList :comment "Contents divider"
+%%%#+END:
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Document End - DB: (b:lcnt:latex/documentEnd)
+# key:  latex/documentEnd:dblock
+# group: masters-common
+# --
+%%%#+BEGIN: b:lcnt:latex/documentEnd  :comment "~~~~~~~~~~~"
+%%%#+END:
+$0

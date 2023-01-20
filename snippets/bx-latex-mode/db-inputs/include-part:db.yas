@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: include Part file (db)
+# key: dblock/includePart
+# group: inputsAndIncludes
+# --
+%%%#+BEGIN: b:lcnt:latex/include :includeFile "${1:includeFile}" :notClearDoublePage nil :includedAs "*In:Part*   "
+%%%#+END:
+$0

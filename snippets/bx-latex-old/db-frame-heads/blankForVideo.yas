@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Frame Blank For body=videoFullScreen
+# key: frame/head/blank
+# group: DB-Frames
+# --
+$0%%%#+BEGIN: b:lcnt:pres:frame:begin/blank  :label "${1:label}" :comment "body=video"
+%%%#+END:
+
+  \pnote{
+    Frame Notes\\\\
+    \par
+  }
+
+\end{frame}

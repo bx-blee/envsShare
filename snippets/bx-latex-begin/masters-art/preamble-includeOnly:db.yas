@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Preamble- Include Only - DB: (b:lcnt:latex/includeOnly)
+# key:  latex/includeOnly:dblock
+# group: masters-art
+# --
+%%%#+BEGIN: b:lcnt:latex/includeOnly :comment "Controlled By LCNT-INFO/Builds/includeOnly"
+%%%#+END:
+$0

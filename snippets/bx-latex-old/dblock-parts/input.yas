@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: input a file (db)
+# key: dblock/input
+# group: Parts dblock
+# --
+$0%%%#+BEGIN: b:lcnt:latex/input :disabledP "false" :input-file "${1:inputFile}"
+%%%#+END:

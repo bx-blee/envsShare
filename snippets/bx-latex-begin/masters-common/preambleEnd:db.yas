@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Preamble End - DB: (b:lcnt:latex:preamble/endMarker)
+# key:  latex/preambleEnd:dblock
+# group: masters-common
+# --
+%%%#+BEGIN: b:lcnt:latex:preamble/endMarker  :comment "~~~~~~~~~~~"
+%%%#+END:
+$0

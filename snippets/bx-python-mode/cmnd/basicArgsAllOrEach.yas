@@ -1,15 +1,15 @@
 # -*- mode: snippet -*-
 # name: Basic With Args -- All or Each
-# key: csCmnds/basicWithArgs
+# key: csCmnds/allOrEach
 # group: csCmnds
 # type: snippet
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
 $0####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "${1:commandName}" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 0 :argsMax 4 :pyInv ""
 ####+END:
-        self.cmndDocStr(f""" #+begin_org
+        if self.cmndDocStr(f""" #+begin_org
 ** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  A starting point command.
-        #+end_org """)
+        #+end_org """): return(cmndOutcome)
 
         actions = self.cmndArgsGet("0&4", cmndArgsSpecDict, effectiveArgsList)
         if actions[0] == "all":

@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: cmndArgsSpec Method -- specMany -- 0-to-9999
+# key: cmndParamsArgs/specMany
+# group: cmndParamsArgs
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+$0####+BEGIN: b:py3:cs:method/typing :methodName "cmndArgsSpec" :methodType "ArgsSpec" :deco "default"
+####+END:
+            self,
+) -> cs.arg.CmndArgsSpecDict:
+        """ #+begin_org
+*** [[elisp:(org-cycle)][| *cmndArgsSpec:* |]] Command Argument Specifications
+        #+end_org """
+        cmndArgsSpecDict = cs.arg.CmndArgsSpecDict()
+        cmndArgsSpecDict.argsDictAdd(
+            argPosition="0&9999",
+            argName="listToApply",
+            argChoices=[],
+            argDescription="List Of Arguments To Be Applied"
+        )
+        return cmndArgsSpecDict

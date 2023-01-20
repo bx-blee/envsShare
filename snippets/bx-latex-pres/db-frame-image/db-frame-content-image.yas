@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Frame Content Image (Any Image)
+# key: frame/content/image
+# group: DB-Frame-Image
+# --
+$0%%%#+BEGIN: b:lcnt:frame:content:image/filePath :imageFile "${1:imageFilePath}"  :comment "${2:comment}"
+%%%#+END:

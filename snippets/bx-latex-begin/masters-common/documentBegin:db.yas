@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Document Begin - DB: (b:lcnt:latex/documentBegin)
+# key:  latex/documentBegin:dblock
+# group: masters-common
+# --
+%%%#+BEGIN: b:lcnt:latex/documentBegin  :comment "~~~~~~~~~~~"
+%%%#+END:
+$0

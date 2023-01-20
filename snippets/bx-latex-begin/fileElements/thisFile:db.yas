@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: File Elements - DB: thisFile (b:prog:file/thisFile)
+# key: fileElements/thisFile:dblock
+# group: fileElements
+# --
+%%%#+BEGIN: b:prog:file/thisFile  :comment "This File"
+%%%#+END:
+$0

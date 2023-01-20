@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Start Included Chapter
+# key: start-files/incChap
+# group: start-files
+# type: command
+# --
+(progn
+  (lsip-local-run-command "echo lcntProc.cs  -i startIncChap chap_startFile.tex")
+  )

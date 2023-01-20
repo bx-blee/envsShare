@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: Basic In icm.py (lib) -- No Args -- no .icm
+# name: OBSOLETED Basic In icm.py (lib) -- No Args -- no .icm
 # key: csCmnds/simpleLib
 # group: csCmnds
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))

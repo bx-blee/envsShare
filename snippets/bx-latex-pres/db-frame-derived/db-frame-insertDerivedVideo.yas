@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: Frame Insert Derived Video
+# key: frame/insert/derived/video
+# group: DB-Frame-Derived
+# --
+$0%%%#+BEGIN: b:lcnt:pres:frame/insertDerivedVideo :title "" :subtitle "" :label "mustMatchInsert" :comment "body=derivedInsert" :derivedLabel "mustMatch" :transition "default"
+%%%#+END:
+
+  \pnote{
+    Frame Notes\\\\
+    \par
+  }
+
+\end{frame}
+
+%%%#+BEGIN: b:lcnt:pres:frame:begin/plain :title "${1:Title}" :subtitle "${2:SubTitle}" :label "mustMatch" :comment "body=itemize"
+%%%#+END:
+
+\begin{center}
+\textit{Frame Body Comes Here:}
+\end{center}
+
+  \pnote{
+    Frame Notes\\\\
+    \par
+  }
+
+\end{frame}

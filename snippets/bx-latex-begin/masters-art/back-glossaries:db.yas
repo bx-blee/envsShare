@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Back- Print Glossaries: (b:lcnt:latex:back/printGlossaries)
+# key:  latex/printGlossaries:dblock
+# group: masters-art
+# --
+%%%#+BEGIN: b:lcnt:latex:back/printGlossaries  :comment ""
+%%%#+END:
+$0

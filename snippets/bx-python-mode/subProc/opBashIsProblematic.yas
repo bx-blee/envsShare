@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name:  SubProc Op Bash isProblematic
+# key: subProc/opBashIsProblematic
+# group: subProc
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+if b.subProc.Op(outcome=cmndOutcome, log=1).bash(
+        f"""echo hello World""",
+).isProblematic():  return(b_io.eh.badOutcome(cmndOutcome))

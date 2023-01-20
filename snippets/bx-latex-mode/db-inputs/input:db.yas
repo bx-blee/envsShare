@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: input any file (db)
+# key: dblock/inputAny
+# group: inputsAndIncludes
+# --
+%%%#+BEGIN: b:lcnt:latex/input :inputFile "${1:inputFile}" :inputedAs "INPUTED"
+%%%#+END:
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Back- Print Index: (b:lcnt:latex:back/printIndex)
+# key:  latex/printIndex:dblock
+# group: masters-art
+# --
+%%%#+BEGIN: b:lcnt:latex:back/printIndex  :comment ""
+%%%#+END:
+$0

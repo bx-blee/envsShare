@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Enum Import
+# key: enum/import
+# group: enum
+# --
+import enum
+$0
