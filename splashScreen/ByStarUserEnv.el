@@ -92,7 +92,6 @@ Blee is Halaal Software intended to remain perpetually Halaal.
 *  [[elisp:(org-cycle)][+-]] Org-Mode Parameters:
 #+STARTUP: overview
 #+STARTUP: lognotestate
-#+STARTUP: inlineimages
 "
 	   @imagesBaseDir
 	   @imagesBaseDir
@@ -107,5 +106,11 @@ Blee is Halaal Software intended to remain perpetually Halaal.
 	   )
    ))
 
+;;; Removed from the very end because of org 2.7 bug.
+;;; 
+;;; #+STARTUP: inlineimages
+
+
 ;;; (insert-welcome-buffer "/bisos/blee/env/images/")
+
 
