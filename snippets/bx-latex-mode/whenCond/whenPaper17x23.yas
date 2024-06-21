@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenPaper17x23
+# key: cond/whenPaper17x23
+# group: whenCond
+# --
+\begin{whenPaper17x23}
+\end{whenPaper17x23}
+$0

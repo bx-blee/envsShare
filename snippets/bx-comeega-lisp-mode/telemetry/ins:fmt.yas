@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: insert format
+# key: telemetry/insFmt
+# group: telemetry
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+(b:ins$fmt$ "${1:bVarName}")
+$0

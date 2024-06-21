@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: message format
+# key: telemetry/msgFmt
+# group: telemetry
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+(b:msg$fmt$ "${1:bVarName}")
+$0

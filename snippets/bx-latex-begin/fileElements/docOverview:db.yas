@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: File Elements - DB Overview  Plus TODOs
+# key: fileElements/fileOverview:dblock
+# group: fileElements
+# --
+%%%#+BEGIN: b:lcnt:latex:felem/docOverview :comment "Overview+Status+TODOs+Plans"
+%%%#+END:
+
+\begin{whenOrg}
+** TODO [[elisp:(org-cycle)][| ]]  Idea      ::  A Starting Point   [[elisp:(org-cycle)][| ]]
+\end{whenOrg}
+$0

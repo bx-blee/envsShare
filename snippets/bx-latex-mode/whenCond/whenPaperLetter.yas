@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenPaperLetter
+# key: cond/whenPaperLetter
+# group: whenCond
+# --
+\begin{whenPaperLetter}
+\end{whenPaperLetter}
+$0

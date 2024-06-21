@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional ignore
+# key: cond/ignore
+# group: whenCond
+# --
+\begin{ignore}
+\end{ignore}
+$0

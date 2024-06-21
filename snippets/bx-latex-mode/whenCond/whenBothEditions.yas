@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Conditional whenEditionsBoth
+# key: cond/whenEditionsBoth
+# group: whenCond
+# --
+\begin{whenUsEdition}
+
+\end{whenUsEdition}
+\begin{whenIntEdition}
+
+\end{whenIntEdition}
+$0

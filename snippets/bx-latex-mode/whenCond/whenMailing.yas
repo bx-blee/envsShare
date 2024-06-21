@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenMailing
+# key: cond/whenMailing
+# group: whenCond
+# --
+\begin{whenMailing}
+\end{whenMailing}
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenDocIsComplete
+# key: cond/whenDocIsComplete
+# group: whenCond
+# --
+\begin{whenDocIsComplete}
+\end{whenDocIsComplete}
+$0

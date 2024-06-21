@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenPaper6x9
+# key: cond/whenPaper6x9
+# group: whenCond
+# --
+\begin{whenPaper6x9}
+\end{whenPaper6x9}
+$0

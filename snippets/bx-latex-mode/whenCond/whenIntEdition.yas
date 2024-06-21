@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenIntEdition
+# key: cond/whenIntEdition
+# group: whenCond
+# --
+\begin{whenIntEdition}
+\end{whenIntEdition}
+$0

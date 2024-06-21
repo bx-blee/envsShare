@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenDocIsPartial
+# key: cond/whenDocIsPartial
+# group: whenCond
+# --
+\begin{whenDocIsPartial}
+\end{whenDocIsPartial}
+$0

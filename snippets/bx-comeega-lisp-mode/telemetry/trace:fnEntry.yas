@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: trace fnEntry
+# key: telemetry/tr-fnEntry
+# group: telemetry
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+(b:trace$funcEntry ${1:bVarName})
+$0

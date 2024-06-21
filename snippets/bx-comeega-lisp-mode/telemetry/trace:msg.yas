@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: trace msg
+# key: telemetry/tr-msg
+# group: telemetry
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+(b:trace$msg ${1:bVarName})
+$0

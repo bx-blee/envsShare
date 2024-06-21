@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tlm log
+# key: telemetry/tlm-log
+# group: telemetry
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+(b|log (b|fmt$ "${1:bVarName}"))
+$0

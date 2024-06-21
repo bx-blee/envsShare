@@ -29,12 +29,8 @@
   (b:yas-expand-snippet|file (expand-file-name "orgLcntProc:db.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
-  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/contentsList:db.yas
-  (b:yas-expand-snippet|file (expand-file-name "contentsList:db.yas" $fileElements))
-  (b:insert:newLines|nuOf 1)
-
-  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/docStatus:db.yas
-  (b:yas-expand-snippet|file (expand-file-name "docStatus:db.yas" $fileElements))
+  ;; /bisos/blee/env/snippets/bx-latex-begin/fileElements/docOverview:db.yas
+  (b:yas-expand-snippet|file (expand-file-name "docOverview:db.yas" $fileElements))
   (b:insert:newLines|nuOf 1)
 
   (org-dblock-update-buffer-bx)

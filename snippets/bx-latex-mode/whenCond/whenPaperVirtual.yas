@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenPaperVirtual
+# key: cond/whenPaperVirtual
+# group: whenCond
+# --
+\begin{whenPaperVirtual}
+\end{whenPaperVirtual}
+$0

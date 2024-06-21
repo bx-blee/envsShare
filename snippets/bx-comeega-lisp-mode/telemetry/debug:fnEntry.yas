@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: debug fnEntry
+# key: telemetry/db-fnEntry
+# group: telemetry
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+(b:debug$funcEntry ${1:bVarName})
+$0

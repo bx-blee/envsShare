@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: Conditional whenPaperAll
+# key: cond/whenPaperAll
+# group: whenCond
+# --
+\begin{whenPaper6x9}
+    \end{large}
+\end{whenPaper6x9}
+\begin{whenPaper17x23}
+    \end{Large}
+\end{whenPaper17x23}
+\begin{whenPaperLetter}
+    \end{Large}
+\end{whenPaperLetter}
+\begin{whenPaperA4}
+    \end{Large}
+\end{whenPaperA4}
+$0

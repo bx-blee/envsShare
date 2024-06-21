@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional comment
+# key: cond/comment
+# group: whenCond
+# --
+\begin{comment}
+\end{comment}
+$0

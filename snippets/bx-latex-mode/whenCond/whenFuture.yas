@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenFuture
+# key: cond/whenFuture
+# group: whenCond
+# --
+\begin{whenFuture}
+\end{whenFuture}
+$0

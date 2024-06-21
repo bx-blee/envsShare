@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenPaperLarge
+# key: cond/whenPaperLarge
+# group: whenCond
+# --
+\begin{whenPaperLarge}
+\end{whenPaperLarge}
+$0

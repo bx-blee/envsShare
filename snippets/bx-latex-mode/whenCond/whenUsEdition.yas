@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenUsEdition
+# key: cond/whenUsEdition
+# group: whenCond
+# --
+\begin{whenUsEdition}
+\end{whenUsEdition}
+$0

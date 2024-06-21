@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenNext
+# key: cond/whenNext
+# group: whenCond
+# --
+\begin{whenNext}
+\end{whenNext}
+$0

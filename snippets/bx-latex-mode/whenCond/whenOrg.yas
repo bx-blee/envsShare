@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Conditional whenOrg
+# key: cond/whenOrg
+# group: whenCond
+# --
+\begin{whenOrg}
+\end{whenOrg}
+$0
