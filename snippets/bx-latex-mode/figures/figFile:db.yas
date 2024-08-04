@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: figuresOdg
+# key: dblock/figuresOdg
+# group: figures
+# --
+$0%%%#+BEGIN: b:lcnt:latex:fig/artpres  :figFile "/lcnt/lgpc/bystar/permanent/common/figures/$1.odg"
+%%%#+END:

@@ -4,14 +4,19 @@
 # group: csCmnds
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "someCmnd" :comment "" :extent "verify" :ro "cli" :parsMand "" :parsOpt "" :argsMin 0 :argsMax 0 :pyInv ""
+####+BEGIN: b:py3:cs:cmnd/classHead :cmndName "someCmnd" :comment "" :extent "verify" :ro "cli" :parsMand "someParam" :parsOpt "" :argsMin 1 :argsMax 9999 :pyInv ""
 ####+END:
         if self.cmndDocStr(f""" #+begin_org
 ** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  A starting point command.
         #+end_org """): return(cmndOutcome)
 
+        runArgs  = self.cmndArgsGet("0&9999", cmndArgsSpecDict, argsList)
+        joinedRunArgs = " ".join(runArgs)
+
+        processedParamsAndArgs = f"""params={someParam} args={joinedRunArgs}"""
+
         if b.subProc.WOpW(invedBy=self, log=1).bash(
-                f"""echo hello World""",
+                f"""echo Provided Params and Args were: {processedParamsAndArgs} """,
         ).isProblematic():  return(b_io.eh.badOutcome(cmndOutcome))
 
-        return(cmndOutcome)
+        return cmndOutcome

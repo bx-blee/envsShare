@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: PyModule pypiProc.sh
+# key: pyModule/pypiProc
+# group: pyModule
+# type: command
+# --
+(progn
+  (insert-file "/bisos/apps/defaults/begin/templates/purposed/pyModule/bash/pypiProc.sh")
+  )

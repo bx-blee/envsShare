@@ -15,12 +15,9 @@
 ***** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Conventional top level example.
         #+end_org \"\"\")
 
-        def cpsInit(): return collections.OrderedDict()
-        def menuItem(verbosity): cs.examples.cmndInsert(cmndName, cps, cmndArgs, verbosity=verbosity) # 'little' or 'none'
-        def execLineEx(cmndStr): cs.examples.execInsert(execLine=cmndStr)
-
-        #logControler = b_io.log.Control()
-        #logControler.loggerSetLevel(20)
+        od = collections.OrderedDict
+        cmnd = cs.examples.cmndEnter
+        literal = cs.examples.execInsert
 
         cs.examples.myName(cs.G.icmMyName(), cs.G.icmMyFullName())
 
@@ -30,13 +27,12 @@
 
         cs.examples.menuChapter('=Misc=  *Facilities*')
 
-        cmndName = 'someCmnd' ; cmndArgs = '' ;
-        cps=cpsInit() ; menuItem(verbosity='little')
+        cmnd('someCmnd', pars=od([('someParam', 'True'),]), args=\"\"\"'firstArg' 'SecondArg'\"\"\")
 
-        cs.examples.menuChapter('=ExecLine Example=  *Example Of GPG Commands*')
+        cs.examples.menuChapter('=ExecLine Example=  *Example Of Echo GPG Install Commands*')
 
-        execLineEx(f\"\"\"echo sudo apt -y install gnupg\"\"\")
+        literal(f\"\"\"echo sudo apt -y install gnupg\"\"\")
 
-        b.ignore(ro.__doc__,)  # We are not using these modules, but they are auto imported.
+        b.ignore(ro.__doc__,  cmndArgsSpecDict)  # We are not using these modules, but they are auto imported.
 
         return(cmndOutcome)\n")))

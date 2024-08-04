@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: cmndParams commonParamsSpecify
+# key: cmndParams/commonParamsSpecify
+# group: cmndParams
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+####+BEGIN: b:py3:cs:func/typing :funcName "commonParamsSpecify" :comment "~CSU Specification~" :funcType "ParSpc" :deco ""
+####+END:
+        csParams: cs.param.CmndParamDict,
+) -> None:
+    csParams.parDictAdd(
+        parName='someParam',
+        parDescription="For example, when someParam is false, less things happen.",
+        parDataType=None,
+        parDefault='True',
+        parChoices=['True', 'False'],
+        argparseShortOpt=None,
+        argparseLongOpt='--someParam',
+    )
+$0

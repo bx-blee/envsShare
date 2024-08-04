@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: PyModule setup.py
+# key: pyModule/setup
+# group: pyModule
+# type: command
+# --
+(progn
+  (insert-file "/bisos/apps/defaults/begin/templates/purposed/pyModule/python/setup.py")
+  )

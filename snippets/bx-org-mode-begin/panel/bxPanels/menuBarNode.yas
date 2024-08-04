@@ -6,16 +6,16 @@
 # --
 (progn
   ;; Footer Part	
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/footerEmacsParams.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/footerOrgParams.org")  
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/footerPanelControls.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/evolution.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/footerEmacsParams.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/footerOrgParams.org")  
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/footerPanelControls.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/evolution.org")
   ;; Header Part
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/overview.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/relatedPanelsEditables.org")  
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/commonSisters.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/title.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/topPanelControls.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/overview.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/relatedPanelsEditables.org")  
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/commonSisters.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/title.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/topPanelControls.org")
   ;; Expand
   (org-dblock-update-buffer-bx)
   ;;(blee:ppmm:org-mode-content-list)  

@@ -3,13 +3,13 @@
 # key: begin/top-title-allRelateds
 # group: panelHeaders
 # type: command
-# Description: Order of insert-file is the opposit of natural order.
+# contributor: Order of insert-file is the opposit of natural order.
 # --
 (progn
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/relatedPanelsEditables.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/commonSisters.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/title.org")
-  (insert-file "/bisos/apps/defaults/activeDocs/common/buePanels/segmentsOfPanels/topPanelControls.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/relatedPanelsEditables.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/commonSisters.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/title.org")
+  (insert-file "/bisos/apps/defaults/begin/bleePanel/segmentsOfPanels/topPanelControls.org")
   (org-dblock-update-buffer-bx)
   ;;(blee:ppmm:org-mode-content-list)  
   )

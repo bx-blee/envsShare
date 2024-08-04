@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: PyModule README.org
+# key: pyModule/readme
+# group: pyModule
+# type: command
+# --
+(progn
+  (insert-file "/bisos/apps/defaults/begin/templates/purposed/pyModule/org/README.org")
+  )

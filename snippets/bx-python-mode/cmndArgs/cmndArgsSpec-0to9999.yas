@@ -4,7 +4,7 @@
 # group: cmndParamsArgs
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
-$0####+BEGIN: b:py3:cs:method/typing :methodName "cmndArgsSpec" :methodType "ArgsSpec" :deco "default"
+####+BEGIN: b:py3:cs:method/typing :methodName "cmndArgsSpec" :methodType "ArgsSpec" :deco "default"
 ####+END:
             self,
 ) -> cs.arg.CmndArgsSpecDict:
@@ -19,3 +19,4 @@ $0####+BEGIN: b:py3:cs:method/typing :methodName "cmndArgsSpec" :methodType "Arg
             argDescription="List Of Arguments To Be Applied"
         )
         return cmndArgsSpecDict
+$0
