@@ -1,17 +1,18 @@
 ;;; -*- Mode: Emacs-Lisp; -*-
 ;; (setq debug-on-error t)
 
-(defun insert-welcome-buffer (@imagesBaseDir)
-  "Inserts the file"
+(defun insert-welcome-buffer (<imagesBaseDir)
+  "Inserts the string"
+  (erase-buffer)
   (insert
-   (format "\
-*  Controls:   [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][ S&Q]]  [[elisp:(save-buffer)][Save]]  [[elisp:(kill-buffer)][Quit]] 
+   (s-lex-format "\
+*  Controls:   [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][ S&Q]]  [[elisp:(save-buffer)][Save]]  [[elisp:(kill-buffer)][Quit]]
 * 
-*         [[%s/copyleft.png]]                                          [[%s/libreservice.jpg]]          [[%s/bystarInside.jpg]]   
+*         [[${<imagesBaseDir}/copyleft.png]]                                          [[${<imagesBaseDir}/libreservice.jpg]]          [[${<imagesBaseDir}/bystarInside.jpg]]
 *      [[http://www.freeprotocols.org][Libre-Halaal]] | [[http://www.freeprotocols.org][Rejection Of]] | [[http://www.freeprotocols.org][Definition Of]] |  [[http://www.freeprotocols.org][Definition Of]] | [[http://www.freeprotocols.org][The L-H (ByStar)]]
 *  [[elisp:(org-cycle)][+-]]  [[http://www.freeprotocols.org][(L-H) Label]]  | [[http://www.freeprotocols.org][IPR Regime]]   | [[http://www.freeprotocols.org][L-H Software]]  |  [[http://www.freeprotocols.org][L-H Services]]  | [[http://www.freeprotocols.org][By* Digital Ecosystem]]   [[elisp:(org-cycle)][+-]]
-**   [[%s/GreenCopyleft-120px.png]] 
-**   [[%s/Anti-copyright-220px.png]]
+**   [[${<imagesBaseDir}/GreenCopyleft-120px.png]]
+**   [[${<imagesBaseDir}/Anti-copyright-220px.png]]
 * 
 *           ~Welcome to~ [[elisp:(bx:bnsm:top:panel-blee)][ ~Blee~ ]] :: _The [[http://www.by-star.net][ByStar]] [[http://www.libreservices.org][Libre-Halaal]] [[http://www.gnu.org/software/emacs][Emacs]] Environment_
 * 
@@ -53,7 +54,7 @@
 ** Main Paper
 ** Publications List
 * 
-*  [[elisp:(org-cycle)][+-]]   [[http://www.byname.net][->]]  [[%s/signup.jpg]]  *[[http://www.byname.net][Joining ByStar]] And Living In Blee*   [[%s/signup.jpg]]   [[http://www.byname.net][->]]  [[elisp:(org-cycle)][+-]] 
+*  [[elisp:(org-cycle)][+-]]   [[http://www.byname.net][->]]  [[${<imagesBaseDir}/signup.jpg]]  *[[http://www.byname.net][Join ByStar]] And Start Living In Blee*   [[${<imagesBaseDir}/signup.jpg]]   [[http://www.byname.net][->]]  [[elisp:(org-cycle)][+-]]
 ** [[Obtain your ByName Account]]        Join ByStar: Obtain your Autonomous Service
 **                                that protects your Autonomy and Privacy
 ** [[Blee Control Panel]]               Top Level Menu of Blee Features
@@ -72,40 +73,37 @@
 * 
 *  [[elisp:(org-cycle)][+-]]  Internationalized and Multi-Lingualized ::   [[Globish]], [[Persian/Farsi فارسی]], [[Arabic عربی]], etc 
 * 
-*  [[elisp:(org-cycle)][+-]]  Brought to you by: [[Neda Communications, Inc]] -- [[Free Protocols Foundation]]  [[debian.org]] [[gnu.org]]
-**   [[elisp:(org-cycle)][+-]]  [[http://www.freeprotocols.org][->]]            [[%s/fpfByStarElipseTop-50.png]]         [[elisp:(org-cycle)][+-]]
+*  [[elisp:(org-cycle)][+-]]  Brought to you by: [[Neda Communications, Inc]] -- [[Libre-Halaal Foundation]]  [[debian.org]] [[gnu.org]]
+**   [[elisp:(org-cycle)][+-]]  [[http://www.freeprotocols.org][->]]            [[${<imagesBaseDir}/fpfByStarElipseTop-50.png]]         [[elisp:(org-cycle)][+-]]
 **  [[elisp:(org-cycle)][| ]]   The Libre-Halaal Foundation (http://www.freeprotocols.org) Is
     And internatioanl organization dedicated to
-**  [[elisp:(org-cycle)][|  ]]                [[%s/fpfByStarElipseBottom-50.png]]       [[elisp:(org-cycle)][| ]]  
+**  [[elisp:(org-cycle)][|  ]]                [[${<imagesBaseDir}/fpfByStarElipseBottom-50.png]]       [[elisp:(org-cycle)][| ]]
 
 * 
 *            /Provided And Supported By:/
-*   [[elisp:(org-cycle)][+-]]  [[http://www.freeprotocols.org][->]]            [[%s/neda.jpg]]        [[elisp:(org-cycle)][+-]]
+*   [[elisp:(org-cycle)][+-]]  [[http://www.freeprotocols.org][->]]            [[${<imagesBaseDir}/neda.jpg]]        [[elisp:(org-cycle)][+-]]
 
 *  [[elisp:(org-cycle)][+-]] Manifest:
-This File: /opt/public/osmt/bin/ByStarUserEnv.org
 
-This is Blee 0.7 which is based on Emacs 24.2.50.1.  
-Blee is Halaal Software intended to remain perpetually Halaal. 
+This is Blee ${blee:version:full} which is based on Emacs Version ${emacs-version}
+Blee is Libre-Halaal Software intended to remain perpetually Libre-Halaal.
 
+This buffer was created with insert-welcome-buffer.
 
 *  [[elisp:(org-cycle)][+-]] Org-Mode Parameters:
 #+STARTUP: overview
 #+STARTUP: lognotestate
-"
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   @imagesBaseDir
-	   )
-   ))
+#+STARTUP: inlineimages
+*  [[elisp:(org-cycle)][+-]] Emacs Local  Parameters:
+# Local Variables:
+# eval: (img-link-overlays)
+# eval: (set-fill-column 100)
+# eval: (blee:fill-column-indicator/enable)
+# End:
 
+"
+	         )))
+   
 ;;; Removed from the very end because of org 2.7 bug.
 ;;; 
 ;;; #+STARTUP: inlineimages
