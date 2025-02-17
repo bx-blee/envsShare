@@ -12,11 +12,11 @@
 (setq  b:py:cs:csuList
   (list
    \"bisos.b.cs.ro\"
-   \"blee.icmPlayer.bleep\"
+   \"bisos.csPlayer.bleep\"
  ))
 #+END_SRC
 #+RESULTS:
-| bisos.b.cs.ro | blee.icmPlayer.bleep |
+| bisos.b.cs.ro | bisos.csPlayer.bleep |
 "
                         ))
   (insert "#+end_org \"\"\"\n")

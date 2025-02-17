@@ -2,7 +2,7 @@
 # name: FileElem: Basic Examples Cmnd dblock+out
 # key: fileElements/basicExamplesCmnd:dblock+out
 # group: fileElements
-# type: command
+# type: command                            
 # --
 (let (
      ($fileName (file-name-nondirectory buffer-file-name))
@@ -11,7 +11,7 @@
      (s-lex-format
      "b:py3:cs:cmnd/classHead :cmndName \"examples\" :extent \"verify\" :ro \"noCli\" :comment \"FrameWrk: CS-Main-Examples\" :parsMand \"\" :parsOpt \"\" :argsMin \"0\" :argsMax \"0\" :asFunc \"\" :interactiveP \"\""))
   (insert (s-lex-format "\
-        self.cmndDocStr(f\"\"\" #+begin_org \
+        self.cmndDocStr(f\"\"\" #+begin_org
 ***** [[elisp:(org-cycle)][| *CmndDesc:* | ]]  Conventional top level example.
         #+end_org \"\"\")
 
@@ -21,9 +21,9 @@
 
         cs.examples.myName(cs.G.icmMyName(), cs.G.icmMyFullName())
 
-        cs.examples.commonBrief()
+        cs.examples.commonBrief(roMenu=False,)
 
-        bleep.examples_icmBasic()
+        bleep.examples_csBasic()
 
         cs.examples.menuChapter('=Misc=  *Facilities*')
 
