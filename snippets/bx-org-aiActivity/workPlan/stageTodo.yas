@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: aiActivity TODO Entry
+# key: workplan/basicTodo
+# group: workplan/basicTodo
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+** TODO [#A] <<5.1>> Title Comes Here
+SCHEDULED: <2026-10-12 Mon>
+- Description of Todo
+----- Results: ------
