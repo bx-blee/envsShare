@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: aiActivity Workplan Driver
+# key: workplan/workflowDriver
+# group: workplan/workflowDriver
+# type: command
+# --
+(progn
+  (insert "
+####+BEGIN: b:ai:workflow/driver
+####+END:
+"
+  ))
