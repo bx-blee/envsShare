@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: aiActivity TODO Entry
 # key: workplan/basicTodo
-# group: workplan/basicTodo
+# group: workplan
 # type: snippet
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --

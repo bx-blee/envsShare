@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Stage Definition Entry
+# key: workplan/stageDefinition
+# group: workplan
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+* Stage 5: Description of Stage Comes Here
+
+<<Stage 5>>
+
+Goal: Goals of the stage comes here
+
+
+

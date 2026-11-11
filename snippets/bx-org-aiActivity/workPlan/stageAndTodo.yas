@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: Stage and TODO Entry
+# key: workplan/stageAndTodo
+# group: workplan
+# type: snippet
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+* Stage 5: Description of Stage Comes Here
+
+<<Stage 5>>
+
+Goal: Goals of the stage comes here
+
+
+** TODO [#A] <<5.1>> Todo Title Comes Here
+SCHEDULED: <2026-10-12 Mon>
+- Description of Todo
+----- Results: ------
